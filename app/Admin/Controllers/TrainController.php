@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Admin\Controllers;
+use App\Station;
 use App\Trainclass;
 use App\Train;
 use Encore\Admin\Controllers\AdminController;
@@ -79,8 +80,8 @@ class TrainController extends AdminController
     {
         $form = new Form(new Train());
 
-        $form->text('origin', __('Origin'));
-        $form->text('destination', __('Destination'));
+        $form->select('origin', __('Origin'))->options(Station::all()->pluck('train_station','id'));
+        $form->select('destination', __('Destination'))->options(Station::all()->pluck('train_station','id'));
         $form->text('depature_time', __('Depature time'));
         $form->text('arrival_time', __('Arrival time'));
         $form->text('travel_time', __('Travel time'));
