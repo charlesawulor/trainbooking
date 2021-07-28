@@ -84,24 +84,29 @@
             </div>
 
         <div class="pnl-body" >
-          <form>
+          <form action="{{route('result')}}" method="GET">
                 <div class="form-field icon-location srcby-counter ">
                   <label>form</label>
-                  <select class="inputype1">
-                    <option value="" disabled selected>Warri (WWR)</option>
-                    <option value="1">North America</option>
-                    <option value="2">Asia</option>
-                    <option value="3">Middle East</option>
+                  <select class="inputype1" name="query">
+                  @if(count($stations) > 0)	
+	                                @foreach($stations as $station)  
+                    <option value="{{$station->train_station}}" >{{$station->train_station}}</option>
+                    @endforeach
+                    @endif
+
+
+                    
                   </select>
                 </div>
 
                 <div class="form-field icon-location srcby-counter ">
                   <label>to</label>
-                  <select class="inputype1">
-                    <option value="" disabled selected>Lokoja (LKJ)</option>
-                    <option value="1">North America</option>
-                    <option value="2">Asia</option>
-                    <option value="3">Middle East</option>
+                  <select class="inputype1" name="query1"  >
+                  @if(count($stations) > 0)	
+	                                @foreach($stations as $station)  
+                    <option value="{{$station->train_station}}" >{{$station->train_station}}</option>
+                    @endforeach
+                    @endif
                   </select>
                 </div>
 
@@ -109,43 +114,15 @@
                   class="form-field icon-calendar bx--date-picker bx--date-picker--single ">
                   <svg data-date-picker-icon class="bx--date-picker__icon"></svg>
                   <label>departure</label>
-                  <input type="date" id="date-picker-6" class="inputype1 bx--date-picker__input"
+                  <input type="date" id="date-picker-6"  class="inputype1 bx--date-picker__input"
                     pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="mm/dd/yyyy" min="<?php echo date("Y-m-d"); ?>" data-date-picker-input />
                 </div>
 
-             <!--   <div data-date-picker data-date-picker-type="single"
-                  class="form-field icon-calendar bx--date-picker bx--date-picker--single ">
-                  <svg data-date-picker-icon class="bx--date-picker__icon"></svg>
-                  <label>return</label>
-                  <input type="text" id="date-picker-7" class="inputype1 bx--date-picker__input"
-                    pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="mm/dd/yyyy" data-date-picker-input />
-                </div> -->
-
-              <!--  <div class="form-field icon-passenger srcby-counter ">
-                  <label>Passengers</label>
-                  <select class="inputype1">
-                    <option value="" disabled selected>2 adult + 1 child</option>
-                    <option value="1">1 adult + 0 child</option>
-                    <option value="2">1 adult + 1 child</option>
-                    <option value="3">1 adult + 2 child</option>
-                    <option value="3">2 adult + 0 child</option>
-                    <option value="3">2 adult + 1 child</option>
-                    <option value="3">2 adult + 2 child</option>
-                  </select>
-                </div> -->
-
-              <!--  <div class="form-field icon-catagory srcby-counter ">
-                  <label>class</label>
-                  <select class="inputype1">
-                    <option value="" disabled selected>economy</option>
-                    <option value="1">Business</option>
-
-                  </select>
-                </div>  -->
+          
 
                 <div class="btn-group">
                  
-                  <a class="btn btn-trpsrc" data-os-animation="fadeInRight" href="trainbooking.html">search my train</a>
+                  <button class="btn btn-trpsrc" data-os-animation="fadeInRight" href="">search my train</button>
                 </div>
               </form>
 

@@ -80,15 +80,15 @@ class TrainController extends AdminController
     {
         $form = new Form(new Train());
 
-        $form->select('origin', __('Origin'))->options(Station::all()->pluck('train_station','id'));
-        $form->select('destination', __('Destination'))->options(Station::all()->pluck('train_station','id'));
+        $form->select('origin', __('Origin'))->options(Station::all()->pluck('train_station','train_station'));
+        $form->select('destination', __('Destination'))->options(Station::all()->pluck('train_station','train_station'));
         $form->text('depature_time', __('Depature time'));
         $form->text('arrival_time', __('Arrival time'));
         $form->text('travel_time', __('Travel time'));
         $form->text('rail_company', __('Rail company'));
         $form->text('train_number', __('Train number'));
         $form->text('travel_date', __('Travel date'));
-        $form->select('ticket_class', __('Ticket class'))->options(Trainclass::all()->pluck('ticket_class','id'));
+        $form->select('ticket_class', __('Ticket class'))->options(Trainclass::all()->pluck('ticket_class','ticket_class'));
         $form->text('price', __('Price'));
 
         return $form;

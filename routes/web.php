@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('home');
 });
+
+Route::resource('home','StationController');
+Route::get('/result', 'StationController@search')->name('result'); 
