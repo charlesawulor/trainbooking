@@ -90,67 +90,7 @@
                         <span>Some best price for you</span>
                     </header>
 
-                    <div class="panelheader">
-                        <div class="flightsinfo">
-                            <ul class="left">
-                                <li><span class="bdr-circle">30</span>Flights found</li>
-                                <li><span class="bdr-circle">20</span>Connecting Flights</li>
-                                <li><span class="bdr-circle">10</span>Direct Flights</li>
-                            </ul>
-                            <div class="right">
-                                <span>Refresh the Result</span>
-                                <span class="refresh bdr-rds15"> 
-                                    <img src="images/icons/refresh.svg" alt="icon" /> 
-                                </span>
-                            </div>
-                        </div>
 
-                        <div class="flights-time-feature">
-                            <div class="left">
-                                <span>select your time</span>
-                                <ul>
-                                    <li class="bdr-rds20"> 
-                                        <!-- <i class="refresh bdr-rds15 gt-right-arrow"></i>  -->
-                                        <img src="images/icons/sunrise.svg" alt="icon" />
-                                        before 11 am </li>
-                                    <li class="bdr-rds20"> 
-                                        <!-- <i class="refresh bdr-rds15 gt-right-arrow"></i>  -->
-                                        <img src="images/icons/fullsun.svg" alt="icon" />
-                                        11 am - 5pm </li>
-                                    <li class="bdr-rds20"> 
-                                        <!-- <i class="refresh bdr-rds15 gt-right-arrow"></i>  -->
-                                        <img src="images/icons/moon.svg" alt="icon" />
-                                        5pm - 9pm </li>
-                                    <li class="bdr-rds20"> 
-                                        <!-- <i class="refresh bdr-rds15 gt-right-arrow"></i>  -->
-                                        <img src="images/icons/moon-cloud.svg" alt="icon" />
-                                        after 9pm </li>
-                                </ul>
-                            </div>
-
-                            <div class="right">
-                                <span>Specials</span>
-                                <ul>
-                                    <li class="bdr-rds20">
-                                        <img src="images/icons/airline.svg" alt="icon" />
-                                    </li>
-
-                                    <li class="bdr-rds20">
-                                        <img src="images/icons/stop.svg" alt="icon" />
-                                    </li>
-
-                                    <li class="bdr-rds20">
-                                        <img src="images/icons/cal2.svg" alt="icon" />
-                                        <a href="#" class="slctdd">Fare calender</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- <img src="./images/dailyfare-cal.jpg" alt="img" /> -->
 
             
 
@@ -254,6 +194,14 @@
                             </div>
 
                             @endforeach
+                            @else
+                            <header>
+                        <h3>Your searched route or travel date didn't return any result.</h3>
+                       
+                    </header>
+
+
+
                 @endif
 
 

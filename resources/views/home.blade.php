@@ -114,7 +114,7 @@
                   class="form-field icon-calendar bx--date-picker bx--date-picker--single ">
                   <svg data-date-picker-icon class="bx--date-picker__icon"></svg>
                   <label>departure</label>
-                  <input type="date" id="date-picker-6"  class="inputype1 bx--date-picker__input"
+                  <input type="text" id="date-picker-6" name="query2"   class="inputype1 bx--date-picker__input"
                     pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="mm/dd/yyyy" min="<?php echo date("Y-m-d"); ?>" data-date-picker-input />
                 </div>
 

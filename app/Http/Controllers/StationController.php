@@ -89,7 +89,8 @@ class StationController extends Controller
     {
     $search_text = $_GET['query'];
     $search_text1 = $_GET['query1'];
-    $searchtrip = Train::where('origin',  'LIKE', '%' . $search_text. '%')->Where('destination',  'LIKE', '%' . $search_text1. '%')->paginate(1);
+    $search_text2 = $_GET['query2'];
+    $searchtrip = Train::where('origin',  'LIKE', '%' . $search_text. '%')->Where('destination',  'LIKE', '%' . $search_text1. '%')->Where('travel_date',  'LIKE', '%' . $search_text2. '%')->paginate(1);
     return view('result',compact ('searchtrip'));
     }
 
