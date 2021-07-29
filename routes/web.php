@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 Route::resource('home','StationController');
 Route::get('/result', 'StationController@search')->name('result'); 
+
