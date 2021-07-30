@@ -58,12 +58,12 @@
                                     <div class="rlistrows">
                                         <div class="source-destination">
                                             <div class="journeydate">
-                                                <span>Journey date</span>
+                                                <span>Travel date</span>
                                                 <strong> {{$trip->travel_date}} <i class="gt-right-arrow"></i> </strong>
                                             </div>
                                             <figure class="cmpny-logo">
                                                 <img class="bdr-circle" src="images/airline-logo5.jpg" alt="img">
-                                                <figcaption>{{$trip->rail_company}}</figcaption>
+                                                <figcaption><b>{{$trip->rail_company}}</b></figcaption>
                                             </figure>
                                             <div class="src-dst">
                                                 <div class="src">
@@ -72,7 +72,7 @@
                                                 </div>
 
                                                 <div class="tracking-line">
-                                                    <img src="images/tracking-line.png" alt="img" />
+                                                    <img src="images/train-line.png" alt="img" />
                                                 </div>
 
                                                 <div class="src">
@@ -120,13 +120,13 @@
                                 <div class="col3">
                                     <div class="fare-book">
                                         <div class="fare">
-                                            <strong>$ {{$trip->price}}</strong>
-                                            <span>Moderate price</span>
-                                            <span class="tag-refund bdr-rds50">Non refundable</span>
+                                            <strong>${{$trip->price}}</strong>
+                                          
+                                            <span class="tag-refund bdr-rds50"><b>Non refundable</b></span>
 
                                             <div class="extra-facility">
-                                                <span class="tag-deals-avbl bdr-rds5">2 Exciting deals available</span>
-                                                <span class="tag-emi-avbl bdr-rds5">Ticket Class: {{$trip->ticket_class}}</span>
+                                                <span class="tag-deals-avbl bdr-rds5"><b>Train Number: {{$trip->train_number}}</b></span>
+                                                <span class="tag-emi-avbl bdr-rds5"><b>Ticket Class: {{$trip->ticket_class}}</b></span>
                                             </div>
                                         </div>
                                        
