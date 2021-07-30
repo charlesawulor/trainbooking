@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Station;
+use App\Train;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
@@ -30,5 +31,6 @@ class AppServiceProvider extends ServiceProvider
         Schema::defaultStringLength(191);
 
         View::share('stations', Station::orderBy('id','asc')->get());
+        View::share('Trains', Train::orderBy('id','desc')->get()); 
     }
 }

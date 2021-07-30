@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::resource('home','StationController');
+//Route::resource('home','StationController');
 Route::get('/result', 'StationController@search')->name('result'); 
+Route::get('/booking-cart', 'StationController@getCart')->name('booking-cart'); 
+Route::resource('singlepage','StationController');
+
+
 

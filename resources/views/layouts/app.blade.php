@@ -1,251 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
 
-
-
-<!doctype html>
-<html class="no-js" lang="en">
-
-
-<!-- Mirrored from html.0effortthemes.com/go/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Jul 2021 17:25:43 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Mirrored from techydevs.com/demos/themes/html/trizen-demo/trizen/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 19:03:38 GMT -->
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-5557595-21"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="author" content="TechyDevs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trizen - Travel Booking HTML Template</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png">
 
-  gtag('config', 'UA-5557595-21');
-</script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
 
-  <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Cholo lets Go | Home</title>
-
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="icon" href="favicon.ico" type="image/ico">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="styles/vendor.css">
-  <link rel="stylesheet" href="styles/main.css">
-
-  <script src="scripts/vendor/modernizr.js"></script>
-
+    <!-- Template CSS Files -->
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap-select.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/line-awesome.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/jquery.fancybox.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/daterangepicker.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/animate.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/animated-headline.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/jquery-ui.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/flag-icon.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
 </head>
-
-<body class="home additional-bar">
-  <!--[if IE]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-
-  <!-- header -->
-  <header class="header1">
-    <div class="container-fluid">
-
-      <!-- Hamburger nav area -->
-      <div class="top">
-        <ul class="left-contact">
-          <li>want to talk with us<a href="#">+234-80 34847***</a></li>
-        </ul>
-        <!-- Hamburger nav menu -->
-        <label class="menu-ribbon menu-toggle" for="menu-toggle-input">
-          <span class="gt-Menu-dot-icon"></span> menu
-        </label>
-        <input id="menu-toggle-input" type="checkbox" />
-        <nav class="menu-hamburger">
-          <div class="menu-wraper">
-
-            <div class="menu-column">
-              <div class="menu-list">
-                <span class="close"> <img src="images/icons/close.svg" alt="img" /> </span>
-                <span class="dottedbg-pattern dottedtext blackdots transparent" data-text="go"> go </span>
-                <div class="logo-row">
-                  <a href="index.html"> <span class="gt-Menu-dot-icon"></span> Let's Travel Together</a>
-                </div>
-                <ul class="list">
-                  <li><a href="index.html">home</a></li>
-
-
-                  <li><a href="flightbooking.html">About Us</a></li>
-                  <!-- <li><a href="flightbookinglist.html">flight booking list</a></li>
-                    <li><a href="flight-seatbooking.html">flight seat booking</a></li> -->
-                    <li><a href="restaurentbooking.html">Train Booking</a></li>
-                  <li><a href="hotelbooking.html">Travel Guide</a></li>
-                  <li><a href="restaurentbooking.html">News</a></li>
-
-                 <!-- <li><a href="trainbooking.html">Train booking</a></li>
-                  <li><a href="cabbooking.html">Cab booking</a></li>
-                  <li><a href="cruisebooking.html">Cruise booking </a></li>
-
-                  <li><a href="travel-planner.html">travel planner</a></li>
-                  <li><a href="travelpackages.html">travel packages</a></li> -->
-
-                  <!-- <li><a href="about-us.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="partners.html">Partners</a></li>
-                    <li><a href="services.html">bookings</a></li>
-                    <li><a href="offers.html">offers</a></li>
-                    
-                    <li><a href="contact-us.html">Contact us</a></li> -->
-                </ul>
-
-                <ul class="footer-policies">
-                  <li><a href="privacypolicy.html">Privacy & Policy</a></li>
-                  <li><a href="term-condition.html">Term and condition</a></li>
-                </ul>
-
-                <!-- Ring animation  -->
-                <div class="ring__container ring-num-6">
-                  <a class="ring hover">
-                    <span class="ring__circles">
-                      <span>
-                        <span>
-                          <svg viewBox="0 0 100 100">
-                            <defs>
-                              <linearGradient id="circle1" gradientUnits="objectBoundingBox"
-                                gradientTransform="rotate(135 0.5 0.5)">
-                                <stop offset="0%" stop-color="#fff"></stop>
-                                <stop offset="100%" stop-color="#fff"></stop>
-                              </linearGradient>
-                            </defs>
-                            <circle vector-effect="non-scaling-stroke" class="circle1" r="45" cx="50" cy="50"></circle>
-                          </svg>
-                        </span>
-                      </span>
-                    </span>
-
-                    <span>
-                      <svg viewBox="0 0 100 100">
-                        <defs>
-                          <linearGradient id="circle2" gradientUnits="objectBoundingBox"
-                            gradientTransform="rotate(135 0.5 0.5)">
-                            <stop offset="0%" stop-color="#fff"></stop>
-                            <stop offset="100%" stop-color="#fff"></stop>
-                          </linearGradient>
-                        </defs>
-                        <circle vector-effect="non-scaling-stroke" class="circle1" r="46" cx="50" cy="50"></circle>
-                      </svg>
-                    </span>
-
-                    <span>
-                      <span>
-                        <svg viewBox="0 0 100 100">
-                          <defs>
-                            <linearGradient id="circle3" gradientUnits="objectBoundingBox"
-                              gradientTransform="rotate(135 0.5 0.5)">
-                              <stop offset="0%" stop-color="#fff"></stop>
-                              <stop offset="100%" stop-color="#fff"></stop>
-                            </linearGradient>
-                          </defs>
-                          <circle vector-effect="non-scaling-stroke" class="circle1" r="46" cx="50" cy="50"></circle>
-                        </svg>
-                      </span>
-                    </span>
-
-                    <span>
-                      <span>
-                        <svg viewBox="0 0 100 100">
-                          <defs>
-                            <linearGradient id="circle4" gradientUnits="objectBoundingBox"
-                              gradientTransform="rotate(135 0.5 0.5)">
-                              <stop offset="0%" stop-color="#fff"></stop>
-                              <stop offset="100%" stop-color="#fff"></stop>
-                            </linearGradient>
-                          </defs>
-                          <circle vector-effect="non-scaling-stroke" class="circle1" r="46" cx="50" cy="50"></circle>
-                        </svg>
-                      </span>
-                    </span>
-
-                    <span>
-                      <span>
-                        <svg viewBox="0 0 100 100">
-                          <defs>
-                            <linearGradient id="circle5" gradientUnits="objectBoundingBox"
-                              gradientTransform="rotate(135 0.5 0.5)">
-                              <stop offset="0%" stop-color="#fff"></stop>
-                              <stop offset="100%" stop-color="#fff"></stop>
-                            </linearGradient>
-                          </defs>
-                          <circle vector-effect="non-scaling-stroke" class="circle1" r="46" cx="50" cy="50"></circle>
-                        </svg>
-                      </span>
-                    </span>
-                  </a>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="menu-column menucart-wrap">
-              <div class="cart-box">
-                <div class="menu-column">
-                  <div class="cart-list">
-                    <span class="close"> <img src="images/icons/close.svg" alt="img" /> </span>
-                    <div class="cart-item">
-                      <i class="gt-shopping-bag"></i> <span>4</span> 4 Item added in the cart
-                    </div>
-
-                    <ul class="recnt-cart-list">
-                      <li>
-                        <span class="cart-img"> <img src="images/travel-bag3.png" alt="img"> </span>
-                        <span class="product-name">Vintage Leather Travel Bag</span>
-                        <span class="product-price"> $499.00 </span>
-                        <span class="remove-product"> <img src="images/icons/close.svg" alt="img"> </span>
-                      </li>
-                      <li>
-                        <span class="cart-img"> <img src="images/travel-bag2.png" alt="img"> </span>
-                        <span class="product-name">Vintage Leather Travel Bag</span>
-                        <span class="product-price"> $499.00 </span>
-                        <span class="remove-product"> <img src="images/icons/close.svg" alt="img"> </span>
-                      </li>
-                      <li>
-                        <span class="cart-img"> <img src="images/travel-bag1.png" alt="img"> </span>
-                        <span class="product-name">Vintage Leather Travel Bag</span>
-                        <span class="product-price"> $499.00 </span>
-                        <span class="remove-product"> <img src="images/icons/close.svg" alt="img"> </span>
-                      </li>
-                    </ul>
-
-                    <div class="cart-btn-group">
-                      <a class="update-cart" href="javascript:void(0);"> Update Cart </a>
-                      <a class="buy-btn" href="javascript:void(0);"> Buy Now </a>
-                    </div>
-
-                    <div class="user-logon">
-                      <span class="user-pic"><img src="images/author-pic1.jpg" alt="img"> </span>
-                      <div class="user-name">
-                        <strong>Darnell Hernandez</strong>
-                        <span>Travel tBlogger</span>
-                      </div>
-                      <a class="logout" href="javascript:void(0);">
-                        <img src="images/icons/logout.svg" alt="img">
-                        <span>logout </span>
-                      </a>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </nav>
-      </div>
-
-      <!-- logo -->
-      <div class="nav-row ctrl-wraper2 clearfix">
-        <a class="logo" href="index.html">
-          <!-- <img src="./images/logo.gif" alt="logo" /> -->
-          <span class="animated-logo"></span>
-        </a>
-      </div>
-
+<body>
+<!-- start cssload-loader -->
+<div class="preloader" id="preloader">
+    <div class="loader">
+        <svg class="spinner" viewBox="0 0 50 50">
+            <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+        </svg>
     </div>
-  </header>
-  
+</div>
+<!-- end cssload-loader -->
+
+<a href="http://techydevs.com/demos/themes/html/trizen/rtl/index.html" class="rtl-btn">RTL Version</a>
+
+<!-- ================================
+            START HEADER AREA
+================================= -->
+<header class="header-area">
+    <div class="header-top-bar padding-right-100px padding-left-100px">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="header-top-content">
+                        <div class="header-left">
+                            <ul class="list-items">
+                                <li><a href="#"><i class="la la-phone mr-1"></i>(123) 123-456</a></li>
+                                <li><a href="#"><i class="la la-envelope mr-1"></i>trizen@example.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="header-top-content">
+                        <div class="header-right d-flex align-items-center justify-content-end">
+                            <div class="header-right-action">
+                                <div class="select-contain select--contain w-auto">
+                                    <select class="select-contain-select">
+                                        <option data-content='<span class="flag-icon flag-icon-id mr-1"></span> Bahasa Indonesia'>Bahasa Indonesia</option>
+                                        <option data-content='<span class="flag-icon flag-icon-de mr-1"></span> Deutsch'>Deutsch</option>
+                                        <option data-content='<span class="flag-icon flag-icon-us mr-1"></span> English(US)' selected>English US</option>
+                                        <option data-content='<span class="flag-icon flag-icon-gb-eng mr-1"></span> English(UK)'>English UK</option>
+                                        <option data-content='<span class="flag-icon flag-icon-ro mr-1"></span> Romanian'>Romanian</option>
+                                        <option data-content='<span class="flag-icon flag-icon-es mr-1"></span> Español'>Español</option>
+                                        <option data-content='<span class="flag-icon flag-icon-fr mr-1"></span> Francais'>Francais</option>
+                                        <option data-content='<span class="flag-icon flag-icon-it mr-1"></span> Italiano'>Italiano</option>
+                                        <option data-content='<span class="flag-icon flag-icon-pl mr-1"></span> Polski'>Polski</option>
+                                        <option data-content='<span class="flag-icon flag-icon-pt mr-1"></span> Portuguese'>Portuguese</option>
+                                        <option data-content='<span class="flag-icon flag-icon-tr mr-1"></span> Turkish'>Turkish</option>
+                                        <option data-content='<span class="flag-icon flag-icon-ru mr-1"></span> Russian'>Russian</option>
+                                        <option data-content='<span class="flag-icon flag-icon-jp mr-1"></span> Japanese'>Japanese</option>
+                                        <option data-content='<span class="flag-icon flag-icon-cn mr-1"></span> Mandarin'>Mandarin</option>
+                                        <option data-content='<span class="flag-icon flag-icon-tw mr-1"></span> Mandarin Chinese'>Mandarin Chinese</option>
+                                        <option data-content='<span class="flag-icon flag-icon-kr mr-1"></span> Korean'>Korean</option>
+                                        <option data-content='<span class="flag-icon flag-icon-in mr-1"></span> Hindi'>Hindi</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="header-right-action">
+                                <div class="select-contain select--contain w-auto">
+                                    <select class="select-contain-select">
+                                        <option value="1">AED</option>
+                                        <option value="2">AUD</option>
+                                        <option value="3">BRL</option>
+                                        <option value="4">CAD</option>
+                                        <option value="5">CHF</option>
+                                        <option value="6">CNY</option>
+                                        <option value="7">EUR</option>
+                                        <option value="8">GBP</option>
+                                        <option value="9">HKD</option>
+                                        <option value="10">IDR</option>
+                                        <option value="11">INR</option>
+                                        <option value="12">JPY</option>
+                                        <option value="13">KRW</option>
+                                        <option value="14">MYR</option>
+                                        <option value="15">NZD</option>
+                                        <option value="16">PHP</option>
+                                        <option value="17">PLN</option>
+                                        <option value="18">RUB</option>
+                                        <option value="19">SAR</option>
+                                        <option value="20">SGD</option>
+                                        <option value="21">THB</option>
+                                        <option value="22">TRY</option>
+                                        <option value="23">TWD</option>
+                                        <option value="24" selected>USD</option>
+                                        <option value="25">VND</option>
+                                        <option value="26">MXN</option>
+                                        <option value="27">ARS</option>
+                                        <option value="28">INR</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="header-right-action">
+                                <a href="#" class="theme-btn theme-btn-small theme-btn-transparent mr-1" data-toggle="modal" data-target="#signupPopupForm">Sign Up</a>
+                                 <a href="#" class="theme-btn theme-btn-small" data-toggle="modal" data-target="#loginPopupForm">Login</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-menu-wrapper padding-right-100px padding-left-100px">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="menu-wrapper">
+                        <a href="#" class="down-button"><i class="la la-angle-down"></i></a>
+                        <div class="logo">
+                           
+                            <div class="menu-toggler">
+                                <i class="la la-bars"></i>
+                                <i class="la la-times"></i>
+                            </div><!-- end menu-toggler -->
+                        </div><!-- end logo -->
+                        <div class="main-menu-content">
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="#">Home <i class="la la-angle-down"></i></a>
+                                        <ul class="dropdown-menu-item">
+                                            <li><a href="index.html">Home - main</a></li>
+                                            <li><a href="index2.html">Home - Hotel</a></li>
+                                            <li><a href="index3.html">Home - Activity</a></li>
+                                            <li><a href="index4.html">Home - Car</a></li>
+                                            <li><a href="index5.html">Home - Cruise</a></li>
+                                            <li><a href="index6.html">Home - Flight</a></li>
+                                            <li><a href="index7.html">Home - City Tour <span class="badge bg-2 text-white">New</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tour <i class="la la-angle-down"></i></a>
+                                        <ul class="dropdown-menu-item">
+                                            <li><a href="tour-fullwidth.html">Tour Full width</a></li>
+                                            <li><a href="tour-grid.html">Tour Grid</a></li>
+                                            <li><a href="tour-list.html">Tour List</a></li>
+                                            <li><a href="tour-left-sidebar.html">Tour Left Sidebar</a></li>
+                                            <li><a href="tour-right-sidebar.html">Tour Right Sidebar</a></li>
+                                            <li><a href="tour-details.html">Tour details</a></li>
+                                            <li><a href="tour-booking.html">Tour Booking</a></li>
+                                            <li><a href="tour-search-result.html">Tour Search Result</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Cruise <i class="la la-angle-down"></i></a>
+                                        <ul class="dropdown-menu-item">
+                                            <li><a href="cruises.html">Cruises</a></li>
+                                            <li><a href="cruises-list.html">Cruise list</a></li>
+                                            <li><a href="cruise-sidebar.html">Cruise Sidebar</a></li>
+                                            <li><a href="cruise-details.html">Cruise details</a></li>
+                                            <li><a href="cruise-booking.html">Cruise Booking</a></li>
+                                            <li><a href="cruise-search-result.html">Cruise Search Result</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pages <i class="la la-angle-down"></i></a>
+                                        <div class="dropdown-menu-item mega-menu">
+                                            <ul class="row no-gutters">
+                                                <li class="col-lg-3 mega-menu-item">
+                                                    <ul>
+                                                        <li><a href="add-hotel.html">add hotel </a></li>
+                                                        <li><a href="add-flight.html">add flight </a></li>
+                                                        <li><a href="add-tour.html">add tour </a></li>
+                                                        <li><a href="add-cruise.html">add cruise </a></li>
+                                                        <li><a href="add-car.html">add car</a></li>
+                                                        <li><a href="user-dashboard.html">User Dashboard</a></li>
+                                                        <li><a href="admin-dashboard.html">Admin Dashboard</a></li>
+                                                        <li><a href="career.html">career <span class="badge bg-2 text-white">New</span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col-lg-3 mega-menu-item">
+                                                    <ul>
+                                                        <li><a href="career-details.html">career details<span class="badge bg-2 text-white">New</span></a></li>
+                                                        <li><a href="user-profile.html">User profile</a></li>
+                                                        <li><a href="become-local-expert.html">Become Local Expert</a></li>
+                                                        <li><a href="contact.html">contact</a></li>
+                                                        <li><a href="cart.html">Cart</a></li>
+                                                        <li><a href="checkout.html">Checkout</a></li>
+                                                        <li><a href="recover.html">recover password</a></li>
+                                                        <li><a href="payment-received.html">payment received</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col-lg-3 mega-menu-item">
+                                                    <ul>
+                                                        <li><a href="payment-complete.html">payment complete</a></li>
+                                                        <li><a href="destinations.html">Destinations</a></li>
+                                                        <li><a href="about.html">about</a></li>
+                                                        <li><a href="services.html">Our Services</a></li>
+                                                        <li><a href="gallery.html">Gallery</a></li>
+                                                        <li><a href="pricing.html">pricing</a></li>
+                                                        <li><a href="faq.html">faq</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="col-lg-3 mega-menu-item">
+                                                    <ul>
+                                                        <li><a href="add-new-post.html">add new post</a></li>
+                                                        <li><a href="blog-full-width.html">blog full width</a></li>
+                                                        <li><a href="blog-grid.html">blog grid</a></li>
+                                                        <li><a href="blog-sidebar.html">blog sidebar</a></li>
+                                                        <li><a href="blog-single.html">blog details</a></li>
+                                                        <li><a href="coming-soon.html">Coming Soon</a></li>
+                                                        <li><a href="page-404.html">404 page</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">Flight <i class="la la-angle-down"></i></a>
+                                        <ul class="dropdown-menu-item">
+                                            <li><a href="flight-grid.html">Flight grid</a></li>
+                                            <li><a href="flight-list.html">Flight list</a></li>
+                                            <li><a href="flight-sidebar.html">Flight sidebar </a></li>
+                                            <li><a href="flight-single.html">Flight details</a></li>
+                                            <li><a href="flight-booking.html">Flight Booking</a></li>
+                                            <li><a href="flight-search-result.html">Flight Search Result</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Hotel <i class="la la-angle-down"></i></a>
+                                        <ul class="dropdown-menu-item">
+                                            <li><a href="hotel-grid.html">Hotel grid</a></li>
+                                            <li><a href="hotel-list.html">Hotel list</a></li>
+                                            <li><a href="hotel-sidebar.html">Hotel sidebar </a></li>
+                                            <li><a href="hotel-single.html">Hotel details</a></li>
+                                            <li><a href="hotel-booking.html">Hotel Booking</a></li>
+                                            <li><a href="hotel-search-result.html">Hotel Search Result</a></li>
+                                            <li>
+                                                <a href="#">Rooms <i class="la la-plus"></i></a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="room-list.html">Room List</a></li>
+                                                    <li><a href="room-grid.html">Room Grid</a></li>
+                                                    <li><a href="room-search-result.html">Search Result</a></li>
+                                                    <li><a href="room-search-result-list.html">Search Result list</a></li>
+                                                    <li><a href="room-details.html">Room Details</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">car <i class="la la-angle-down"></i></a>
+                                        <ul class="dropdown-menu-item">
+                                            <li><a href="car-grid.html">car grid</a></li>
+                                            <li><a href="car-list.html">car list</a></li>
+                                            <li><a href="car-sidebar.html">car sidebar </a></li>
+                                            <li><a href="car-single.html">car details</a></li>
+                                            <li><a href="car-booking.html">Car Booking</a></li>
+                                            <li><a href="car-search-result.html">Car Search Result</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div><!-- end main-menu-content -->
+                        <div class="nav-btn">
+                            <a href="become-local-expert.html" class="theme-btn">Become Local Expert</a>
+                        </div><!-- end nav-btn -->
+                    </div><!-- end menu-wrapper -->
+                </div><!-- end col-lg-12 -->
+            </div><!-- end row -->
+        </div><!-- end container-fluid -->
+    </div><!-- end header-menu-wrapper -->
+</header>
 
 
 
@@ -254,358 +296,158 @@
 
 
 
-  <!-- footer -->
-  <div class="bottom-left">
-    <svg class="shapes2 layer2 ">
-      <use xlink:href="svg/shapes.svg#shapes2" />
-    </svg>
+  
+<!-- ================================
+       START FOOTER AREA
+================================= -->
 
-    <svg class="shapes3 layer3">
-      <use xlink:href="svg/shapes.svg#shapes3" fill="url(#dots-4)" />
-    </svg>
-  </div>
+<!-- start back-to-top -->
+<div id="back-to-top">
+    <i class="la la-angle-up" title="Go top"></i>
+</div>
+<!-- end back-to-top -->
 
-  <footer>
-    <div class="container-fluid" data-rellax-speed="1" data-rellax-percentage=".7">
-      <div class="ctrl-wraper2">
-
-        <div class="ftr-main-sec">
-          <div class="cus-review">
-            <h5 class="ftr-headng">customer <br /> review</h5>
-            <div class="vertical slider">
-              <div class="csreview-item">
-                <div class="cs-thumb">
-                  <img src="images/client-pic1.jpg" alt="img" />
+<!-- end modal-shared -->
+<div class="modal-popup">
+    <div class="modal fade" id="signupPopupForm" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title title" id="exampleModalLongTitle">Sign Up</h5>
+                        <p class="font-size-14">Hello! Welcome Create a New Account</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="la la-close"></span>
+                    </button>
                 </div>
-                <div class="cs-content">
-                  <strong>Blanca Johnston</strong>
-                  <p>We have written example text for over 40 industry sectors, this is an ongoing project and we will
-                    be adding more copy if there is a demand.</p>
-                  <span class="rating"><img src="images/star.png" alt="img" />4.5 / 5</span>
+                <div class="modal-body">
+                    <div class="contact-form-action">
+                        <form method="post">
+                            <div class="input-box">
+                                <label class="label-text">Username</label>
+                                <div class="form-group">
+                                    <span class="la la-user form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="Type your username">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">Email Address</label>
+                                <div class="form-group">
+                                    <span class="la la-envelope form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="Type your email">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">Password</label>
+                                <div class="form-group">
+                                    <span class="la la-lock form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="Type password">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">Repeat Password</label>
+                                <div class="form-group">
+                                    <span class="la la-lock form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="Type again password">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="btn-box pt-3 pb-4">
+                                <button type="button" class="theme-btn w-100">Register Account</button>
+                            </div>
+                            <div class="action-box text-center">
+                                <p class="font-size-14">Or Sign up Using</p>
+                                <ul class="social-profile py-3">
+                                    <li><a href="#" class="bg-5 text-white"><i class="lab la-facebook-f"></i></a></li>
+                                    <li><a href="#" class="bg-6 text-white"><i class="lab la-twitter"></i></a></li>
+                                    <li><a href="#" class="bg-7 text-white"><i class="lab la-instagram"></i></a></li>
+                                    <li><a href="#" class="bg-5 text-white"><i class="lab la-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div><!-- end contact-form-action -->
                 </div>
-              </div>
-              <div class="csreview-item">
-                <div class="cs-thumb">
-                  <img src="images/client-pic2.jpg" alt="img" />
-                </div>
-                <div class="cs-content">
-                  <strong>Leticia Fox</strong>
-                  <p>We have written example text for over 40 industry sectors, this is an ongoing project and we will
-                    be adding more copy if there is a demand.</p>
-                  <span class="rating"><img src="images/star.png" alt="img" />4.5 / 5</span>
-                </div>
-              </div>
-              <div class="csreview-item">
-                <div class="cs-thumb">
-                  <img src="images/client-pic2.jpg" alt="img" />
-                </div>
-                <div class="cs-content">
-                  <strong>Kelly Cunningham</strong>
-                  <p>We have written example text for over 40 industry sectors, this is an ongoing project and we will
-                    be adding more copy if there is a demand.</p>
-                  <span class="rating"><img src="images/star.png" alt="img" />4.5 / 5</span>
-                </div>
-              </div>
-              <div class="csreview-item">
-                <div class="cs-thumb">
-                  <img src="images/client-pic1.jpg" alt="img" />
-                </div>
-                <div class="cs-content">
-                  <strong>Blanca Johnston</strong>
-                  <p>We have written example text for over 40 industry sectors, this is an ongoing project and we will
-                    be adding more copy if there is a demand.</p>
-                  <span class="rating"><img src="images/star.png" alt="img" />4.5 / 5</span>
-                </div>
-              </div>
             </div>
-          </div>
-
-          <div class="menu">
-            <h5 class="ftr-headng">menu</h5>
-            <ul>
-              <li><a href="about-us.html">About us</a></li>
-              <li><a href="services.html">Train Booking</a></li>
-              <li><a href="flightbooking.html">Travel Guide</a></li>
-              <li><a href="trainbooking.html">News</a></li>
-            
-            </ul>
-
-            
-          </div>
-
-          <div class="news">
-            <h5 class="ftr-headng">news</h5>
-            <ul class="newslist">
-              <li>
-                <a href="blognews.html">
-                  <span class="nsthumb"><img src="images/footer-news-thumb1.jpg" alt="img" /></span>
-                  <p>News title goes here with bold text</p>
-                  <span class="date">15 june</span>
-                </a>
-              </li>
-              <li>
-                <a href="blognews.html">
-                  <span class="nsthumb"><img src="images/footer-news-thumb2.jpg" alt="img" /></span>
-                  <p>News title goes here with bold text</p>
-                  <span class="date">15 june</span>
-                </a>
-              </li>
-              <li>
-                <a href="blognews.html">
-                  <span class="nsthumb"><img src="images/footer-news-thumb3.jpg" alt="img" /></span>
-                  <p>News title goes here with bold text</p>
-                  <span class="date">15 june</span>
-                </a>
-              </li>
-              <li>
-                <a href="blognews.html">
-                  <span class="nsthumb"><img src="images/footer-news-thumb4.jpg" alt="img" /></span>
-                  <p>News title goes here with bold text</p>
-                  <span class="date">15 june</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="social">
-            <div class="instagram">
-              <h5 class="ftr-headng">instagram</h5>
-              <ul class="insta-thumbgal">
-                <li><a href="#"><img src="images/insta-thumb1.jpg" alt="img" /></a></li>
-                <li><a href="#"><img src="images/insta-thumb2.jpg" alt="img" /></a></li>
-                <li><a href="#"><img src="images/insta-thumb3.jpg" alt="img" /></a></li>
-                <li><a href="#"><img src="images/insta-thumb4.jpg" alt="img" /></a></li>
-                <li><a href="#"><img src="images/insta-thumb5.jpg" alt="img" /></a></li>
-                <li><a href="#"><img src="images/insta-thumb6.jpg" alt="img" /></a></li>
-              </ul>
-            </div>
-
-            <div class="connect-with-us">
-              <h5 class="ftr-headng">social with us</h5>
-              <ul class="social-links">
-                <li><a href="#" class="gt-uniE91B ft-twitter"></a></li>
-                <li><a href="#" class="gt-uniE914 ft-facebook"></a></li>
-                <li><a href="#" class="gt-uniE916 ft-linkedin"></a></li>
-              </ul>
-            </div>
-          </div>
         </div>
-
-        <div class="footernote-area">
-
-          <div class="footer-logo-box">
-            <a class="footer-logo" href="index.html">
-              <img src="images/logo.png" alt="logo" />
-              <!-- <span class="logo animated-logo"></span> -->
-            </a>
-            <div class="ftr-logo-txt">
-              <strong>Hello lets go!</strong>
-              <span>The one and only stop for every traveler</span>
-            </div>
-          </div>
-
-          <ul class="footer-dtls">
-            <li><a href="#"><span class="gt-internet"></span>we have worldwide travel <br /> operators</a></li>
-           <!-- <li><a href="#"><span class="gt-package"></span>free shipping</a></li> -->
-            <li><a href="#"><span class="gt-right-arrow"></span>hassle free cancel <br />policies</a></li>
-          </ul>
-
-
-        </div>
-
-        <div class="copyright">
-          <p>Hello lets go! - Book Now</p>
-        </div>
-
-      </div>
     </div>
-  </footer>
+</div><!-- end modal-popup -->
 
-  <!-- Serving Since -->
-  <div class="estb">
-    <span class="est-year">2021</span>
-    <span class="estfrm">serving since</span>
-  </div>
+<!-- end modal-shared -->
+<div class="modal-popup">
+    <div class="modal fade" id="loginPopupForm" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title title" id="exampleModalLongTitle2">Login</h5>
+                        <p class="font-size-14">Hello! Welcome to your account</p>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="la la-close"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-form-action">
+                        <form method="post">
+                            <div class="input-box">
+                                <label class="label-text">Username</label>
+                                <div class="form-group">
+                                    <span class="la la-user form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="Type your username">
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="input-box">
+                                <label class="label-text">Password</label>
+                                <div class="form-group mb-2">
+                                    <span class="la la-lock form-icon"></span>
+                                    <input class="form-control" type="text" name="text" placeholder="Type your password">
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="custom-checkbox mb-0">
+                                        <input type="checkbox" id="rememberchb">
+                                        <label for="rememberchb">Remember me</label>
+                                    </div>
+                                    <p class="forgot-password">
+                                        <a href="recover.html">Forgot Password?</a>
+                                    </p>
+                                </div>
+                            </div><!-- end input-box -->
+                            <div class="btn-box pt-3 pb-4">
+                                <button type="button" class="theme-btn w-100">Login Account</button>
+                            </div>
+                            <div class="action-box text-center">
+                                <p class="font-size-14">Or Login Using</p>
+                                <ul class="social-profile py-3">
+                                    <li><a href="#" class="bg-5 text-white"><i class="lab la-facebook-f"></i></a></li>
+                                    <li><a href="#" class="bg-6 text-white"><i class="lab la-twitter"></i></a></li>
+                                    <li><a href="#" class="bg-7 text-white"><i class="lab la-instagram"></i></a></li>
+                                    <li><a href="#" class="bg-5 text-white"><i class="lab la-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </form>
+                    </div><!-- end contact-form-action -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- end modal-popup -->
 
-  <div class="top-left">
-    <svg class="shapes1 layer1">
-      <use xlink:href="svg/shapes.svg#shapes1" fill="url(#gradient1)" />
-    </svg>
-    <svg class="shapes2 layer2">
-      <use xlink:href="svg/shapes.svg#shapes2" />
-    </svg>
-    <svg class="shapes3 layer3">
-      <use xlink:href="svg/shapes.svg#shapes3" fill="url(#dots-4)" />
-    </svg>
-  </div>
-
-  <span class="dottedline-left"></span>
-
-  <!-- svg -->
-  <svg height="0" width="0" xmlns="http://www.w3.org/2000/svg" version="1.1" style="position: absolute; top: 0px;">
-    <defs>
-      <linearGradient id="gradient1" x2="1" y2="1">
-        <stop offset="15%" stop-color="#f47e08" />
-        <stop offset="30%" stop-color="#f68e06" />
-        <stop offset="100%" stop-color="#faa004" />
-      </linearGradient>
-    </defs>
-  </svg>
-
-  <svg height="0" width="0" xmlns="http://www.w3.org/2000/svg" version="1.1" style="position: absolute; ">
-    <defs>
-      <pattern id="dots-4" patternUnits="userSpaceOnUse" width=".5" height=".5">
-        <image
-          xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSd3aGl0ZScgLz4KICA8cmVjdCB4PScwJyB5PScwJyB3aWR0aD0nNCcgaGVpZ2h0PSc0JyBmaWxsPSdibGFjaycgLz4KPC9zdmc+"
-          x="0" y="0" width=".3" height=".3"> </image>
-      </pattern>
-    </defs>
-  </svg>
-  <!-- for footer dotted bg -->
-  <svg height="0" width="0" xmlns="http://www.w3.org/2000/svg" version="1.1" style="position: absolute; ">
-    <defs>
-      <pattern id="dots-5" patternUnits="userSpaceOnUse" width=".6" height=".6">
-        <image
-          xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSd3aGl0ZScgLz4KICA8cmVjdCB4PScwJyB5PScwJyB3aWR0aD0nNCcgaGVpZ2h0PSc0JyBmaWxsPSdibGFjaycgLz4KPC9zdmc+"
-          x="0" y="0" width=".6" height=".6"> </image>
-      </pattern>
-    </defs>
-  </svg>
-
-
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-    (function (b, o, i, l, e, r) {
-      b.GoogleAnalyticsObject = l;
-      b[l] || (b[l] =
-        function () {
-          (b[l].q = b[l].q || []).push(arguments)
-        });
-      b[l].l = +new Date;
-      e = o.createElement(i);
-      r = o.getElementsByTagName(i)[0];
-      e.src = '../../www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e, r)
-    }(window, document, 'script', 'ga'));
-    ga('create', 'UA-XXXXX-X');
-    ga('send', 'pageview');
-
-  </script>
-
-  <script src="scripts/vendor.js"></script>
-
-  <script src="scripts/plugins.js"></script>
-
-  <!-- water ripper js -->
-  <script src="assets/script/jquery.ripples.js"></script>
-
-  <!-- extra script files -->
-  <script src="assets/script/jquery.flipster.min.js"></script>
-  <!-- <script src="assets/script/jquery.easeScroll.js"></script> -->
-  <script src="assets/script/pricerange.js"></script>
-  <script src="assets/script/ScrollToPlugin.min.js"></script>
-
-  <!-- pb calendar -->
-  <script src="assets/script/pb.calendar.js"></script>
-  <script src="assets/script/moment.min.js"></script>
-  <script src="assets/script/materialize.js"></script>
-  <script src="assets/script/mosaic.js"></script>
-  <script src="assets/script/swiper.js"></script>
-
-  <!-- for dotted svg line -->
-  <script src="assets/script/Draggable.min.js"></script>
-  <script src="assets/script/ThrowPropsPlugin.min.js"></script>
-  <script src="assets/script/DrawSVGPlugin.min.js"></script>
-  <script src="assets/script/AnticipateEase.min.js"></script>
-  <script src="assets/script/MorphSVGPlugin.min.js"></script>
-
-  <script src="assets/script/GSDevTools.min.js"></script>
-  <script src="assets/script/moment-with-locales.min.js"></script>
-  <script src="assets/script/rescalendar.min.js"></script>
-
-  <!-- smooth page scroll script -->
-  <!-- <script src="assets/script/smooth-scroll.polyfills.min.js"></script> -->
-  <script src="assets/script/car-script.js"></script>
-  <script src="assets/script/gratedeal.js"></script>
-  <script src="assets/script/particles.min.js"></script>
-  <script src="assets/script/carbon-components.js"></script>
-  <script src="assets/script/anime.min.js"></script>
-
-  <script src="scripts/main.js"></script>
-
-
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-5557595-21"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-5557595-21');
-
-  </script>
-
-       
-  <!-- Start of Async Drift Code -->
-  <script>
-    "use strict";
-
-    ! function () {
-      var t = window.driftt = window.drift = window.driftt || [];
-      if (!t.init) {
-        if (t.invoked) return void(window.console && console.error && console.error("Drift snippet included twice."));
-        t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide",
-            "off", "on"
-          ],
-          t.factory = function (e) {
-            return function () {
-              var n = Array.prototype.slice.call(arguments);
-              return n.unshift(e), t.push(n), t;
-            };
-          }, t.methods.forEach(function (e) {
-            t[e] = t.factory(e);
-          }), t.load = function (t) {
-            var e = 3e5,
-              n = Math.ceil(new Date() / e) * e,
-              o = document.createElement("script");
-            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src =
-              "https://js.driftt.com/include/" + n + "/" + t + ".js";
-            var i = document.getElementsByTagName("script")[0];
-            i.parentNode.insertBefore(o, i);
-          };
-      }
-    }();
-    drift.SNIPPET_VERSION = '0.3.1';
-    drift.load('p6rs6yxhpmn6');
-
-  </script>
-  <!-- End of Async Drift Code -->
-
-  <!-- Hotjar Tracking Code for http://html.0effortthemes.com/go/ -->
-  <script>
-    (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () {
-        (h.hj.q = h.hj.q || []).push(arguments)
-      };
-      h._hjSettings = {
-        hjid: 1578075,
-        hjsv: 6
-      };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script');
-      r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-
-  </script>
-
-
+<!-- Template JS Files -->
+<script src="{{asset('assets/js/jquery-3.4.1.min.js')}}"></script>
+<script src="{{asset('assets/js/jquery-ui.js')}}"></script>
+<script src="{{asset('assets/js/popper.min.js')}}"></script>
+<script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('assets/js/bootstrap-select.min.js')}}"></script>
+<script src="{{asset('assets/js/moment.min.js')}}"></script>
+<script src="{{asset('assets/js/daterangepicker.js')}}"></script>
+<script src="{{asset('assets/js/owl.carousel.min.js')}}"></script>
+<script src="{{asset('assets/js/jquery.fancybox.min.js')}}"></script>
+<script src="{{asset('assets/js/jquery.countTo.min.js')}}"></script>
+<script src="{{asset('assets/js/animated-headline.js')}}"></script>
+<script src="{{asset('assets/js/jquery.ripples-min.js')}}"></script>
+<script src="{{asset('assets/js/quantity-input.js')}}"></script>
+<script src="{{asset('assets/js/main.js')}}"></script>
 </body>
 
-
-<!-- Mirrored from html.0effortthemes.com/go/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Jul 2021 17:28:31 GMT -->
+<!-- Mirrored from techydevs.com/demos/themes/html/trizen-demo/trizen/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 30 Jul 2021 19:08:04 GMT -->
 </html>

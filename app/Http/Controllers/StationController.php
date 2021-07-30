@@ -1,10 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-
+use App\Cart;
 use App\Train;
+use Illuminate\Http\Request;
+use App\Http\Requests;
+use Session;
+
+
 
 class StationController extends Controller
 {
@@ -48,7 +51,8 @@ class StationController extends Controller
      */
     public function show($id)
     {
-        //
+        $trains = Train::find($id);
+        return view('singlepage')->with('trains',$trains);
     }
 
     /**
@@ -89,13 +93,13 @@ class StationController extends Controller
     {
     $search_text = $_GET['query'];
     $search_text1 = $_GET['query1'];
-    $search_text2 = $_GET['query2'];
+    $search_text2 = $_GET['daterange-single'];
     $searchtrip = Train::where('origin',  'LIKE', '%' . $search_text. '%')->Where('destination',  'LIKE', '%' . $search_text1. '%')->Where('travel_date',  'LIKE', '%' . $search_text2. '%')->get();
     return view('result',compact ('searchtrip'));
     }
 
 
-   
+    
 
    
 
