@@ -7,16 +7,12 @@
 
         <!-- main content area -->
 
-        <section class="breadcrumb-top-bar">
+    <section class="breadcrumb-top-bar">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcrumb-list breadcrumb-top-list">
-                    <ul class="list-items bg-transparent radius-none p-0">
-                        <li><a href="index.html">Home</a></li>
-                        <li>France</li>
-                        <li>New york to paris</li>
-                    </ul>
+                  
                 </div><!-- end breadcrumb-list -->
             </div><!-- end col-lg-12 -->
         </div><!-- end row -->
@@ -36,16 +32,7 @@
                 <div class="col-lg-12">
                     <div class="breadcrumb-btn">
                         <div class="btn-box">
-                            <a class="theme-btn" data-fancybox="video" data-src="https://www.youtube.com/watch?v=IpVmKLpo-Sk"
-                               data-speed="700">
-                                <i class="la la-video-camera mr-2"></i>Video
-                            </a>
-                            <a class="theme-btn" data-src="images/destination-img.jpg"
-                               data-fancybox="gallery"
-                               data-caption="Showing image - 01"
-                               data-speed="700">
-                                <i class="la la-photo mr-2"></i>More Photos
-                            </a>
+                        
                         </div>
                         <a class="d-none"
                              data-fancybox="gallery"
@@ -76,27 +63,11 @@
     START TOUR DETAIL AREA
 ================================= -->
 <section class="tour-detail-area padding-bottom-90px">
-    <div class="single-content-navbar-wrap menu section-bg" id="single-content-navbar">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="single-content-nav" id="single-content-nav">
-                        <ul>
-                            <li><a data-scroll="description" href="#description" class="scroll-link active">Flight Details</a></li>
-                            <li><a data-scroll="inflight-features" href="#inflight-features" class="scroll-link">Inflight Features</a></li>
-                            <li><a data-scroll="seat-selection" href="#seat-selection" class="scroll-link">Seat Selection</a></li>
-                            <li><a data-scroll="baggage" href="#baggage" class="scroll-link">Baggage</a></li>
-                            <li><a data-scroll="fare-rules" href="#fare-rules" class="scroll-link">Fare Rules</a></li>
-                            <li><a data-scroll="reviews" href="#reviews" class="scroll-link">Reviews</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!-- end single-content-navbar-wrap -->
+ 
     <div class="single-content-box">
         <div class="container">
             <div class="row">
+
                 <div class="col-lg-8">
                     <div class="single-content-wrap padding-top-60px">
                         <div id="description" class="page-scroll">
@@ -253,6 +224,8 @@
                 
                     </div><!-- end single-content-wrap -->
                 </div><!-- end col-lg-8 -->
+
+
               <div class="col-lg-4">
                     <div class="sidebar single-content-sidebar mb-0">
                         <div class="sidebar-widget single-content-widget">
@@ -265,16 +238,13 @@
                    
                          
                             <div class="btn-box pt-2">
-                                <a href="flight-booking.html" class="theme-btn text-center w-100 mb-2"><i class="la la-shopping-cart mr-2 font-size-18"></i>Book Now</a>
-                               
-                              
+                           <a href="flight-booking.html" class="theme-btn text-center w-100 mb-2"><i class="la la-shopping-cart mr-2 font-size-18"></i>Book Now</a>                                                         
                             </div>
-                        </div>
-                      
-                  
-                    
+                        </div>        
                     </div>
                 </div>
+
+
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end single-content-box -->

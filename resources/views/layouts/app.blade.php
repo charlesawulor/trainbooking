@@ -39,7 +39,7 @@
 </div>
 <!-- end cssload-loader -->
 
-<a href="http://techydevs.com/demos/themes/html/trizen/rtl/index.html" class="rtl-btn">RTL Version</a>
+
 
 <!-- ================================
             START HEADER AREA
