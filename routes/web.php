@@ -20,5 +20,16 @@ Route::get('/result', 'StationController@search')->name('result');
 Route::get('/booking-cart', 'StationController@getCart')->name('booking-cart'); 
 Route::resource('singlepage','StationController');
 
+Route::get('/add-to-cart/{id}',[
+    'uses' => 'StationController@getAddToCart',
+    'as' => 'singlepage.addToCart'
+    
+    ]);
+
+
+
+    Route::get('/appointment-cart', 'ListingController@getCart')->name('appointment-cart'); 
+
+
 
 

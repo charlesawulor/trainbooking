@@ -232,13 +232,13 @@
                             <div class="sidebar-widget-item">
                                 <div class="sidebar-book-title-wrap mb-3">
                                     <h3>Popular</h3>
-                                    <p><span class="text-form">From</span><span class="text-value ml-2 mr-1">${{$trains->price}}</span> <span class="before-price"></span></p>
+                                    <p><span class="text-form">From</span><span class="text-value ml-2 mr-1">${{$trains->ticket_price}}</span> <span class="before-price"></span></p>
                                 </div>
                             </div>
                    
                          
                             <div class="btn-box pt-2">
-                           <a href="flight-booking.html" class="theme-btn text-center w-100 mb-2"><i class="la la-shopping-cart mr-2 font-size-18"></i>Book Now</a>                                                         
+                           <a href="{{ route('singlepage.addToCart', ['id'=>$trains->id])}}" class="theme-btn text-center w-100 mb-2"><i class="la la-shopping-cart mr-2 font-size-18"></i>Book Now</a>                                                         
                             </div>
                         </div>        
                     </div>

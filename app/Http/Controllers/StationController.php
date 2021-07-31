@@ -98,10 +98,70 @@ class StationController extends Controller
     return view('result',compact ('searchtrip'));
     }
 
+    public function getAddToCart(Request $request, $id) {
+        $train = Train::find($id);
+        $oldCart = Session::has('cart') ? Session::get('cart') : null;
+        $cart = new Cart($oldCart);
+        $cart->add($train, $train->id);   
+        $request->session()->put('cart',$cart);
+       // return back(); 
+       return redirect()->route('booking-cart');        
+    }
 
-    
+  //   public function getReduceByOne($id) { 
+  //       $oldCart = Session::has('cart') ? Session::get('cart') : null;
+  //      $cart = new Cart($oldCart);
+  //      $cart->reduceByOne($id);
+  //      if (count($cart->items) > 0){
+  //          Session::put('cart', $cart);
+  //           }else {
+  //            Session::forget('cart');
+  //           }
+  //      return back(); 
+  //  } 
 
-   
+
+    public function getRemoveItem($id) {
+        $oldCart = Session::has('cart') ? Session::get('cart') : null;
+        $cart = new Cart($oldCart);
+        $cart->removeItem($id);        
+     if (count($cart->items) > 0){
+    Session::put('cart', $cart);
+     }else {
+      Session::forget('cart');
+     }
+       // return back(); 
+        return redirect()->route('booking-cart');
+    }
+
+
+
+     public function getCart(){
+        if (!Session::has('cart')){
+             return view('booking-cart');
+        }
+        $oldCart = Session::get('cart');
+        $cart = new Cart($oldCart);
+        return view('booking-cart', ['trains' => $cart->items, 'totalPrice' => $cart->totalPrice]);
+      }
+
+
+
+      public function getCheckout(){
+        if (!Session::has('cart')){
+            return view('booking-cart');
+        }
+        $oldCart = Session::get('cart');
+        $cart = new Cart($oldCart);
+        $total = $cart->totalPrice;
+        return view('checkout', ['trains' => $cart->items, 'totalPrice' => $cart->totalPrice]);
+      }
+
+
+
+
+
+
 
 
 

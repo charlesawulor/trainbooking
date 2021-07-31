@@ -68,14 +68,14 @@
                                         <div class="deal-title d-flex align-items-center">
                                             <img src="{{asset('assets/images/airline-img.png')}}" alt="air-line-img">
                                             <h3 class="deal__title">
-                                                <a href="flight-single.html" class="d-flex align-items-center">
+                                                <a href="singlepage/{{$trip->id}}" class="d-flex align-items-center">
                                                 {{$trip->origin}}<i class="la la-exchange mx-2"></i>{{$trip->destination}}
                                                 </a>
                                             </h3>
                                         </div>
                                         <p class="deal__meta">Trip Date : {{$trip->travel_date}}</p>
                                         <div class="deal-action-box d-flex align-items-center justify-content-between">
-                                            <div class="price-box d-flex align-items-center"><span class="price__from mr-1">From</span><span class="price__num">${{$trip->price}}</span></div>
+                                            <div class="price-box d-flex align-items-center"><span class="price__from mr-1">From</span><span class="price__num">${{$trip->ticket_price}}</span></div>
                                             <a href="singlepage/{{$trip->id}}" class="btn-text">See details<i class="la la-angle-right"></i></a>
                                         </div>
                                     </div><!-- end deal-card -->
