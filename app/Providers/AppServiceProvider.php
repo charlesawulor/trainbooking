@@ -34,5 +34,6 @@ class AppServiceProvider extends ServiceProvider
        // View::share('Trains', Train::orderBy('id','desc')->get()); 
 
         View::share('trains', Train::orderBy('id','desc')->take(3)->get()); 
+        View::share('popularroutes', Train::orderBy('id','desc')->take(3)->get()); 
     }
 }
