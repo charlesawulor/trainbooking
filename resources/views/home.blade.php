@@ -266,19 +266,15 @@
             <div class="col-lg-4">
                 <div class="section-heading">
                     <h2 class="sec__title line-height-50">What our customers are saying us?</h2>
-                    <p class="sec__desc padding-top-30px">
-                        Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero
-                    </p>
-                    <div class="btn-box padding-top-35px">
-                        <a href="#" class="theme-btn">Explore All</a>
-                    </div>
+                    
+                   
                 </div><!-- end section-heading -->
             </div><!-- end col-lg-4 -->
             <div class="col-lg-8">
                 <div class="testimonial-carousel carousel-action">
                     <div class="testimonial-card">
                         <div class="testi-desc-box">
-                            <p class="testi__desc">Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit anim laborum sint occaecat cupidatat non proident. Occaecat cupidatat non proident des.</p>
+                            <p class="testi__desc">Booking train ticket Booking train ticket Booking train ticket Booking train ticket Booking train ticket Booking train ticket Booking train ticket.</p>
                         </div>
                         <div class="author-content d-flex align-items-center">
                             <div class="author-img">
@@ -299,7 +295,7 @@
                     </div><!-- end testimonial-card -->
                     <div class="testimonial-card">
                         <div class="testi-desc-box">
-                            <p class="testi__desc">Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit anim laborum sint occaecat cupidatat non proident. Occaecat cupidatat non proident des.</p>
+                            <p class="testi__desc">Booking train ticket Booking train ticket Booking train ticket Booking train ticket Booking train ticket Booking train ticket Booking train ticket.</p>
                         </div>
                         <div class="author-content d-flex align-items-center">
                             <div class="author-img">
