@@ -238,7 +238,7 @@
                    
                          
                             <div class="btn-box pt-2">
-                           <a href="{{ route('singlepage.addToCart', ['id'=>$trains->id])}}" class="theme-btn text-center w-100 mb-2"><i class="la la-shopping-cart mr-2 font-size-18"></i>Book Now</a>                                                         
+                           <a href="{{ route('singlepage.addToCart', ['id'=>$trains->id])}}" class="theme-btn text-center w-100 mb-2"><i class="la la-money-bill mr-2 font-size-18"></i>Book Now</a>                                                         
                             </div>
                         </div>        
                     </div>

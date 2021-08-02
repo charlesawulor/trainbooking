@@ -28,7 +28,9 @@ Route::get('/add-to-cart/{id}',[
 
 
 
-    Route::get('/appointment-cart', 'ListingController@getCart')->name('appointment-cart'); 
+    
+
+    Route::get('/checkout', 'StationController@getCheckout')->name('checkout'); 
 
 
 

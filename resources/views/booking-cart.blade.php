@@ -68,7 +68,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="btn-box mt-3 text-center">
-                    <button type="button" class="theme-btn"><i class="la la-money-bill mr-1"></i>Make Payment</button>
+                    <a href="{{route('checkout')}}" class="theme-btn"><i class="la la-money-bill mr-1"></i>Make Payment</a>
                     
                 </div><!-- end btn-box -->
             </div><!-- end col-lg-12 -->
