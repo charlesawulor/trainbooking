@@ -30,8 +30,12 @@ Route::get('/add-to-cart/{id}',[
 
     
 
-    Route::get('/checkout', 'StationController@getCheckout')->name('checkout'); 
+    Route::get('/checkout', 'StationController@getCheckout')->name('checkout')->middleware('auth'); 
 
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

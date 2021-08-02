@@ -64,8 +64,31 @@
                          
                           
                             <div class="header-right-action">
-                                <a href="#" class="theme-btn theme-btn-small theme-btn-transparent mr-1" data-toggle="modal" data-target="#signupPopupForm">Sign Up</a>
-                                 <a href="#" class="theme-btn theme-btn-small" data-toggle="modal" data-target="#loginPopupForm">Login</a>
+
+                            @guest 
+                                <a href="{{ route('login') }}" class="theme-btn theme-btn-small theme-btn-transparent mr-1" >Sign in</a>
+
+                                @if (Route::has('register'))
+
+                                 <a href="{{ route('register') }}" class="theme-btn theme-btn-small" >Sing Up</a>
+
+                                 @endif
+
+                                 @else
+
+                                 <a href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();" class="theme-btn theme-btn-small" >Logout</a>
+
+                           <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                </form> 
+
+
+                                 @endguest
+
+
+
                             </div>
 
                         </div>
@@ -81,6 +104,7 @@
                     <div class="menu-wrapper">
                         <a href="#" class="down-button"><i class="la la-angle-down"></i></a>
                         <div class="logo">
+                        <a href="index.html"><img src="{{asset('assets/images/thrifty.png')}}" alt="logo"></a>
                            
                             <div class="menu-toggler">
                                 <i class="la la-bars"></i>

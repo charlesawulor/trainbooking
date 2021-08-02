@@ -13,15 +13,15 @@
                 <div class="col-lg-6">
                     <div class="breadcrumb-content">
                         <div class="section-heading">
-                            <h2 class="sec__title text-white">Flight Booking</h2>
+                            <h2 class="sec__title text-white">Train Booking</h2>
                         </div>
                     </div><!-- end breadcrumb-content -->
                 </div><!-- end col-lg-6 -->
                 <div class="col-lg-6">
                     <div class="breadcrumb-list text-right">
                         <ul class="list-items">
-                            <li><a href="index.html">Home</a></li>
-                            <li>Flight Booking</li>
+                        
+                            <li>Train Booking</li>
                         </ul>
                     </div><!-- end breadcrumb-list -->
                 </div><!-- end col-lg-6 -->
@@ -284,7 +284,7 @@
                         <div class="card-item shadow-none radius-none mb-0">
                             <div class="card-img pb-4">
                                 <a href="flight-single.html" class="d-block">
-                                    <img src="images/img26.jpg" alt="plane-img">
+                                    <img src="{{asset('assets/images/traincheckout.jpg')}}" style="height:150px" alt="plane-img">
                                 </a>
                             </div>
                             @foreach($trains as $train) 
@@ -294,9 +294,7 @@
                                         <h3 class="card-title">{{$train['item']['origin']}} to {{$train['item']['destination']}}</h3>
                                         <p class="card-meta">One way trip</p>
                                     </div>
-                                    <div>
-                                        <a href="flight-single.html" class="btn ml-1"><i class="la la-edit" data-toggle="tooltip" data-placement="top" title="Edit"></i></a>
-                                    </div>
+                                    
                                 </div>
                                 <div class="card-rating">
                                     <span class="badge text-white"><b>Seat Type:{{$train['item']['ticket_class']}}</b></span>
