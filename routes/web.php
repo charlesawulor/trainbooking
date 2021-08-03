@@ -19,6 +19,8 @@ Route::get('/', function () {
 Route::get('/result', 'StationController@search')->name('result'); 
 Route::get('/booking-cart', 'StationController@getCart')->name('booking-cart'); 
 Route::resource('singlepage','StationController');
+Route::post('/checkout', 'StationController@postCheckout')->name('checkout'); 
+Route::get('/ordercomplete', 'StationController@postCheckout')->name('ordercomplete'); 
 
 Route::get('/add-to-cart/{id}',[
     'uses' => 'StationController@getAddToCart',

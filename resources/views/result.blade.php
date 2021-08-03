@@ -50,7 +50,7 @@
                        </ul>
                    </div><!-- end section-tab -->
                </div><!-- end flight-filter-tab -->
-
+               
 
                 <div class="popular-round-trip-wrap padding-top-40px">
                     <div class="tab-content" id="myTabContent4">
@@ -79,7 +79,11 @@
                                     </div><!-- end deal-card -->
                                 </div><!-- end col-lg-4 -->
 
+                               
+
                                 @endforeach
+
+                                <p> {{count($trip)}} </p>
 
                                 @else
                    <div class="col-lg-10 responsive-column" style="margin:auto">
@@ -90,6 +94,8 @@
                            <img src="{{asset('assets/images/nigeriatrain.jpg')}}" style="height:200px" alt="Destination-img">
                              </a>
                              <h3 style="margin:auto">Your searched route or travel date didn't return any result.</h3>
+
+                          
                       
                             </div>
                          

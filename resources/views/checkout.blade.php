@@ -40,36 +40,32 @@
     START BOOKING AREA
 ================================= -->
 <section class="booking-area padding-top-100px padding-bottom-70px">
+
+<div id="charge-error" class="alert alert-danger {{ !Session::has('error') ? 'hidden' : ''}}" > {{ Session::get('error')}} </div>
     <div class="container">
-        <div class="row">
+       <div class="row">
+       @foreach($trains as $train) 
             <div class="col-lg-8">
                 <div class="form-box">
                     <div class="form-title-wrap">
                         <h3 class="title">Your Personal Information</h3>
                     </div><!-- form-title-wrap -->
+
                     <div class="form-content">
                         <div class="contact-form-action">
-                            <form method="post">
+                            <form method="post" action="{{route('checkout')}}" id="checkout-form">
                                 <div class="row">
-                                    <div class="col-lg-6 responsive-column">
+                                    <div class="col-lg-12 responsive-column">
                                         <div class="input-box">
-                                            <label class="label-text">First Name</label>
+                                            <label class="label-text">Full Name</label>
                                             <div class="form-group">
                                                 <span class="la la-user form-icon"></span>
-                                                <input class="form-control" type="text" name="text" placeholder="First name">
+                                                <input class="form-control" type="text" name="name" placeholder="First name">
                                             </div>
                                         </div>
                                     </div><!-- end col-lg-6 -->
-                                    <div class="col-lg-6 responsive-column">
-                                        <div class="input-box">
-                                            <label class="label-text">Last Name</label>
-                                            <div class="form-group">
-                                                <span class="la la-user form-icon"></span>
-                                                <input class="form-control" type="text" name="text" placeholder="Last name">
-                                            </div>
-                                        </div>
-                                    </div><!-- end col-lg-6 -->
-                                    <div class="col-lg-6 responsive-column">
+                             
+                                    <div class="col-lg-12 responsive-column">
                                         <div class="input-box">
                                             <label class="label-text">Your Email</label>
                                             <div class="form-group">
@@ -78,86 +74,90 @@
                                             </div>
                                         </div>
                                     </div><!-- end col-lg-6 -->
-                                    <div class="col-lg-6 responsive-column">
+                                    <div class="col-lg-12 responsive-column">
                                         <div class="input-box">
                                             <label class="label-text">Phone Number</label>
                                             <div class="form-group">
                                                 <span class="la la-phone form-icon"></span>
-                                                <input class="form-control" type="text" name="text" placeholder="Phone Number">
+                                                <input class="form-control" type="text" name="phone" placeholder="Phone Number">
                                             </div>
                                         </div>
                                     </div><!-- end col-lg-6 -->
                                     <div class="col-lg-12">
                                         <div class="input-box">
-                                            <label class="label-text">Address Line</label>
+                                            <label class="label-text">Ticket No</label>
                                             <div class="form-group">
                                                 <span class="la la-map-marked form-icon"></span>
-                                                <input class="form-control" type="text" name="text" placeholder="Address line">
+                                                <input class="form-control" type="text" value="NRC<?php 
+                                                                       $rand=rand(); 
+                                                                       echo $rand; 
+                                                        ?>NG" 
+                                                        name="ticket" >
                                             </div>
                                         </div>
                                     </div><!-- end col-lg-12 -->
-                               
-                                    <div class="col-lg-12">
+
+                                    <div class="col-lg-12 responsive-column">
                                         <div class="input-box">
-                                            <div class="custom-checkbox mb-0">
-                                                <input type="checkbox" id="receiveChb">
-                                                <label for="receiveChb">I want to receive Trizen promotional offers in the future</label>
+                                            <label class="label-text">Origin</label>
+                                            <div class="form-group">
+                                                <span class="la la-phone form-icon"></span>
+                                                <input class="form-control" type="text" value="{{$train['item']['origin']}}" name="origin" placeholder="Phone Number">
                                             </div>
                                         </div>
-                                    </div><!-- end col-lg-12 -->
-                                </div>
-                           
-                        </div><!-- end contact-form-action -->
-                    </div><!-- end form-content -->
-                </div><!-- end form-box -->
-                <div class="form-box">
-                    <div class="form-title-wrap">
-                        <h3 class="title">Your Card Information</h3>
-                    </div><!-- form-title-wrap -->
-                    <div class="form-content">
-                        <div class="section-tab check-mark-tab text-center pb-4">
-                            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="credit-card-tab" data-toggle="tab" href="#credit-card" role="tab" aria-controls="credit-card" aria-selected="false">
-                                        <i class="la la-check icon-element"></i>
-                                        <img src="{{asset('assets/images/payment-img.png')}}" alt="">
-                                        <span class="d-block pt-2">Payment with card</span>
-                                    </a>
-                                </li>
-                              
-                            </ul>
-                        </div><!-- end section-tab -->
-                        <div class="tab-content">
-                            <div class="tab-pane fade show active" id="credit-card" role="tabpanel" aria-labelledby="credit-card-tab">
-                                <div class="contact-form-action">
-                              
-                                        <div class="row">
-                                            <div class="col-lg-6 responsive-column">
+                                    </div><!-- end col-lg-6 -->
+
+                                    <div class="col-lg-12 responsive-column">
+                                        <div class="input-box">
+                                            <label class="label-text">Destination</label>
+                                            <div class="form-group">
+                                                <span class="la la-phone form-icon"></span>
+                                                <input class="form-control" type="text" value="{{$train['item']['destination']}}" name="destination" placeholder="Phone Number">
+                                            </div>
+                                        </div>
+                                    </div><!-- end col-lg-6 -->
+
+                                    <div class="col-lg-12 responsive-column">
+                                        <div class="input-box">
+                                            <label class="label-text">Travel Date</label>
+                                            <div class="form-group">
+                                                <span class="la la-phone form-icon"></span>
+                                                <input class="form-control" type="text" value="{{$train['item']['travel_date']}}" name="travel_date" placeholder="Phone Number">
+                                            </div>
+                                        </div>
+                                    </div><!-- end col-lg-6 -->
+
+                               
+                               
+                                  
+
+
+                                    <div class="col-lg-12 responsive-column">
                                                 <div class="input-box">
                                                     <label class="label-text">Card Holder Name</label>
                                                     <div class="form-group">
                                                         <span class="la la-credit-card form-icon"></span>
-                                                        <input class="form-control" type="text" name="text" placeholder="Card holder name">
+                                                        <input class="form-control" id="card-name" type="text"  placeholder="Card holder name">
                                                     </div>
                                                 </div>
                                             </div><!-- end col-lg-6 -->
-                                            <div class="col-lg-6 responsive-column">
+
+                                            <div class="col-lg-12 responsive-column">
                                                 <div class="input-box">
                                                     <label class="label-text">Card Number</label>
                                                     <div class="form-group">
                                                         <span class="la la-credit-card form-icon"></span>
-                                                        <input class="form-control" type="text" name="text" placeholder="Card number">
+                                                        <input class="form-control" id="card-number" type="text"  placeholder="Card number">
                                                     </div>
                                                 </div>
                                             </div><!-- end col-lg-6 -->
-                                            <div class="col-lg-6">
-                                                <div class="row">
-                                                    <div class="col-lg-6 responsive-column">
+
+                                            <div class="col-lg-6 responsive-column">
                                                         <div class="input-box">
                                                             <label class="label-text">Expiry Month</label>
                                                             <div class="form-group">
                                                                 <span class="la la-credit-card form-icon"></span>
-                                                                <input class="form-control" type="text" name="text" placeholder="MM">
+                                                                <input class="form-control"  id="card-expiry-month" type="text"  placeholder="MM">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -166,115 +166,42 @@
                                                             <label class="label-text">Expiry Year</label>
                                                             <div class="form-group">
                                                                 <span class="la la-credit-card form-icon"></span>
-                                                                <input class="form-control" type="text" name="text" placeholder="YY">
+                                                                <input class="form-control" id="card-expiry-Year" type="text" placeholder="YY">
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div><!-- end col-lg-6 -->
-                                            <div class="col-lg-6">
+
+                                                    <div class="col-lg-6">
                                                 <div class="input-box">
                                                     <label class="label-text">CVV</label>
                                                     <div class="form-group">
                                                         <span class="la la-pencil form-icon"></span>
-                                                        <input class="form-control" type="text" name="text" placeholder="CVV">
+                                                        <input class="form-control" id="card-cvc" type="text"  placeholder="CVV">
                                                     </div>
                                                 </div>
                                             </div><!-- end col-lg-6 -->
-                                            <div class="col-lg-12">
-                                                <div class="input-box">
-                                                    <div class="form-group">
-                                                        <div class="custom-checkbox">
-                                                            <input type="checkbox" id="agreechb">
-                                                            <label for="agreechb">By continuing, you agree to the <a href="#">Terms and Conditions</a>.</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div><!-- end col-lg-12 -->
+
+                                            {{csrf_field()}}  
                                             <div class="col-lg-12">
                                                 <div class="btn-box">
-                                                    <button class="theme-btn" type="submit">Confirm Booking</button>
+                                                    <button class="theme-btn" type="submit">Confirm Booking ${{$totalPrice}}</button>
                                                 </div>
                                             </div><!-- end col-lg-12 -->
-                                        </div>
-                                    </form>
-                                </div><!-- end contact-form-action -->
-                            </div><!-- end tab-pane-->
 
 
 
-
-
-
-
-
-
-                            <div class="tab-pane fade" id="paypal" role="tabpanel" aria-labelledby="paypal-tab">
-                                <div class="contact-form-action">
-                                    <form method="post">
-                                        <div class="row">
-                                            <div class="col-lg-6 responsive-column">
-                                                <div class="input-box">
-                                                    <label class="label-text">Email Address</label>
-                                                    <div class="form-group">
-                                                        <span class="la la-envelope form-icon"></span>
-                                                        <input class="form-control" type="email" name="email" placeholder="Enter email address">
-                                                    </div>
-                                                </div>
-                                            </div><!-- end col-lg-6 -->
-                                            <div class="col-lg-6 responsive-column">
-                                                <div class="input-box">
-                                                    <label class="label-text">Password</label>
-                                                    <div class="form-group">
-                                                        <span class="la la-lock form-icon"></span>
-                                                        <input class="form-control" type="text" name="text" placeholder="Enter password">
-                                                    </div>
-                                                </div>
-                                            </div><!-- end col-lg-6 -->
-                                            <div class="col-lg-12">
-                                                <div class="btn-box">
-                                                    <button class="theme-btn" type="submit">Login Account</button>
-                                                </div>
-                                            </div><!-- end col-lg-12 -->
-                                        </div>
-                                    </form>
-                                </div><!-- end contact-form-action -->
-                            </div><!-- end tab-pane-->
-                            <div class="tab-pane fade" id="payoneer" role="tabpanel" aria-labelledby="payoneer-tab">
-                                <div class="contact-form-action">
-                                    <form method="post">
-                                        <div class="row">
-                                            <div class="col-lg-6 responsive-column">
-                                                <div class="input-box">
-                                                    <label class="label-text">Email Address</label>
-                                                    <div class="form-group">
-                                                        <span class="la la-envelope form-icon"></span>
-                                                        <input class="form-control" type="email" name="email" placeholder="Enter email address">
-                                                    </div>
-                                                </div>
-                                            </div><!-- end col-lg-6 -->
-                                            <div class="col-lg-6 responsive-column">
-                                                <div class="input-box">
-                                                    <label class="label-text">Password</label>
-                                                    <div class="form-group">
-                                                        <span class="la la-lock form-icon"></span>
-                                                        <input class="form-control" type="text" name="text" placeholder="Enter password">
-                                                    </div>
-                                                </div>
-                                            </div><!-- end col-lg-6 -->
-                                            <div class="col-lg-12">
-                                                <div class="btn-box">
-                                                    <button class="theme-btn" type="submit">Login Account</button>
-                                                </div>
-                                            </div><!-- end col-lg-12 -->
-                                        </div>
-                                    </form>
-                                </div><!-- end contact-form-action -->
-                            </div><!-- end tab-pane-->
-                        </div><!-- end tab-content -->
+                                </div>
+                           
+                        </div><!-- end contact-form-action -->
                     </div><!-- end form-content -->
                 </div><!-- end form-box -->
+             
             </div><!-- end col-lg-8 -->
+@endforeach
+         
+
+
+
             <div class="col-lg-4">
                 <div class="form-box booking-detail-form">
                     <div class="form-title-wrap">
@@ -331,5 +258,12 @@
         </div><!-- end row -->
     </div><!-- end container -->
 </section><!-- end booking-area -->
+
+@endsection
+
+@section('scripts')
+
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+<script type="text/javascript" src="{{ URL::to('src/js/checkout.js')}}"></script>
 
 @endsection

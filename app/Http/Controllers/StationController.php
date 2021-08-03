@@ -6,7 +6,10 @@ use App\Train;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use Session;
-
+use Auth;
+use Stripe\Charge;
+use Stripe\Stripe;
+use App\Order;
 
 
 class StationController extends Controller
@@ -156,6 +159,47 @@ class StationController extends Controller
         $total = $cart->totalPrice;
         return view('checkout', ['trains' => $cart->items, 'totalPrice' => $cart->totalPrice]);
       }
+
+
+
+      public function postCheckout(Request $request)
+      {
+          if (!Session::has('cart')){
+             return redirect()->route('booking-cart');
+         }
+         $oldCart = Session::get('cart');
+         $cart = new Cart($oldCart);
+         
+        Stripe::setApiKey('sk_test_51Io4hXACLwpJgLfCVSFzJMfIoYRSfnzavlSQIMDzzaTnwziz6vtwrCyGutVROodumwZabXSPvFDC9Q6GKyf8Mz3w002rLASPxn');
+         try {
+           $charge = Charge::create(array(
+              "amount" => $cart->totalPrice * 100,
+              "currency" => "usd",
+              "source" =>'tok_visa', //use this for test cards
+           // "source" => $request->input('stripeToken'), // use this for real cards when In production
+              "description" => "Charge for property inspection appointment booking"
+              ));
+              $order = new Order();
+              $order->cart = serialize($cart);
+              $order->name = $request->input('name');
+              $order->email = $request->input('email');
+              $order->phone = $request->input('phone');
+              $order->ticket_number = $request->input('ticket');
+              $order->origin = $request->input('origin');
+              $order->destination = $request->input('destination');
+              $order->travel_date = $request->input('travel_date');
+              $order->payment_id = $charge->id;
+              Auth::user()->orders()->save($order);             
+             } catch (\Exception $e){
+               return redirect()->route('checkout')->with('error',$e->getMessage());
+            }
+            Session::forget('cart');
+            return redirect()->route('ordercomplete')->with('success', 'Payment successful');
+          } 
+         
+         
+
+
 
 
 
