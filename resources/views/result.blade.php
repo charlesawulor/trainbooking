@@ -24,6 +24,8 @@
 <!-- ================================
     START ROUND-TRIP AREA
 ================================= -->
+
+
 <section class="round-trip-flight section-padding">
     <div class="container">
 
@@ -40,13 +42,6 @@
                <div class="flight-filter-tab text-center">
                    <div class="section-tab section-tab-3">
                        <ul class="nav nav-tabs justify-content-center" id="myTab4" role="tablist">
-
-
-                   
-
-
-
-                      
                        </ul>
                    </div><!-- end section-tab -->
                </div><!-- end flight-filter-tab -->
@@ -67,11 +62,12 @@
                                             <img src="{{asset('assets/images/airline-img.png')}}" alt="air-line-img">
                                             <h3 class="deal__title">
                                                 <a href="singlepage/{{$trip->id}}" class="d-flex align-items-center">
-                                                {{$trip->origin}}<i class="la la-exchange mx-2"></i>{{$trip->destination}}
+                                                {{$trip->origin}}<i class="la la-exchange mx-2"></i>{{$trip->destination}}  
                                                 </a>
                                             </h3>
                                         </div>
                                         <p class="deal__meta">Trip Date : {{$trip->travel_date}}</p>
+                                        <p class="deal__meta" style="color:red">{{250-count($searchseat)}} seat(s) left</p>
                                         <div class="deal-action-box d-flex align-items-center justify-content-between">
                                             <div class="price-box d-flex align-items-center"><span class="price__from mr-1">From</span><span class="price__num">${{$trip->ticket_price}}</span></div>
                                             <a href="singlepage/{{$trip->id}}" class="btn-text">See details<i class="la la-angle-right"></i></a>
@@ -83,7 +79,7 @@
 
                                 @endforeach
 
-                                <p> {{count($trip)}} </p>
+                             
 
                                 @else
                    <div class="col-lg-10 responsive-column" style="margin:auto">

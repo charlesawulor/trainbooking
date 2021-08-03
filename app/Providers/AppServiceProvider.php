@@ -4,6 +4,8 @@ namespace App\Providers;
 
 use App\Station;
 use App\Train;
+use App\Order;
+
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
@@ -35,5 +37,14 @@ class AppServiceProvider extends ServiceProvider
 
         View::share('trains', Train::orderBy('id','desc')->take(3)->get()); 
         View::share('popularroutes', Train::orderBy('id','desc')->take(3)->get()); 
+
+        View::share('searchtrip', Train::orderBy('id','desc')->take(3)->get()); 
+        View::share('searchseat', Order::orderBy('id','desc')->take(3)->get()); 
+
+
+    
+    
+
+
     }
 }

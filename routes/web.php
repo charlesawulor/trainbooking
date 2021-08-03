@@ -17,6 +17,7 @@ Route::get('/', function () {
 
 //Route::resource('home','StationController');
 Route::get('/result', 'StationController@search')->name('result'); 
+//Route::get('/result', 'StationController@searchseat')->name('result'); 
 Route::get('/booking-cart', 'StationController@getCart')->name('booking-cart'); 
 Route::resource('singlepage','StationController');
 Route::post('/checkout', 'StationController@postCheckout')->name('checkout'); 
