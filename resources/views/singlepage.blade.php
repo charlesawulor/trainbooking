@@ -105,7 +105,7 @@
                                     <div class="col-lg-3 col-sm-3">
                                         <div class="single-feature-titles text-center mb-3">
                                             <h3 class="title font-size-15 font-weight-medium">Available Seat(s)</h3>
-                                            <span class="font-size-13">{{250-count($searchseat)}}</span>
+                                            <span class="font-size-13">{{200-count($searchseat)}}</span>
                                         </div>
                                     </div><!-- end col-lg-4 -->
                                     <div class="col-lg-12">
@@ -148,7 +148,7 @@
                                             </div>
                                             <div class="single-feature-titles">
                                                 <h3 class="title font-size-15 font-weight-medium"> Fees</h3>
-                                                <span class="font-size-13">${{$trains->price}}</span>
+                                                <span class="font-size-13">${{$trains->ticket_price}}</span>
                                             </div>
                                         </div><!-- end single-tour-feature -->
                                     </div><!-- end col-lg-4 -->

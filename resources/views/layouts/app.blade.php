@@ -76,6 +76,8 @@
 
                                  @else
 
+                                 <a href="{{ route('ticket') }}" class="theme-btn theme-btn-small" > My Tickets</a>
+
                                  <a href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();" class="theme-btn theme-btn-small" >Logout</a>
