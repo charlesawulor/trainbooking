@@ -59,7 +59,8 @@
 
                                     <li class="font-size-15"><span class="w-auto d-block mb-n1"><i class="la la-money-bill mr-1 font-size-17"></i>Ticket Cost</span>${{$item ['item'] ['ticket_price']  }}</li>
 
-                                    <li class="font-size-15"><span class="w-auto d-block mb-n1"><i class="la la-file mr-1 font-size-17"></i>Ticket Number</span>{{$order->ticket_number}}</li>
+                                    <li class="font-size-15"><span class="w-auto d-block mb-n1"><i class="la la-file mr-1 font-size-17"></i>Ticket ID</span>{{$order->ticket_number}}</li>
+                                    <li class="font-size-15"><span class="w-auto d-block mb-n1"><i class="la la-user mr-1 font-size-17"></i>Passenger</span>{{$order->name}}</li>
                                 </ul>
                                <!-- <h3 class="card-title pb-3">Ticket Details</h3>
                                 <div class="section-block"></div>
