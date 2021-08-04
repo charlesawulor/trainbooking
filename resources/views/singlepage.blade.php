@@ -83,31 +83,26 @@
                             <div class="section-block"></div>
                             <div class="single-content-item py-4">
                                 <div class="row">
-                                <div class="col-lg-3 col-sm-3">
+                                <div class="col-lg-4 col-sm-4">
                                         <div class="single-feature-titles text-center mb-3">
                                             <h3 class="title font-size-15 font-weight-medium">Train Take off</h3>
                                             <span class="font-size-13">{{$trains->depature_time}}</span>
                                         </div>
                                     </div><!-- end col-lg-4 -->
-                                    <div class="col-lg-3 col-sm-3">
+                                    <div class="col-lg-4 col-sm-4">
                                         <div class="single-feature-titles text-center mb-3">
                                             <i class="la la-clock-o text-color font-size-22"></i>
                                             <span class="font-size-13 mt-n2">{{$trains->travel_time}}</span>
                                         </div>
                                     </div><!-- end col-lg-4 -->
-                                    <div class="col-lg-3 col-sm-3">
+                                    <div class="col-lg-4 col-sm-4">
                                         <div class="single-feature-titles text-center mb-3">
                                             <h3 class="title font-size-15 font-weight-medium">Train Arrive</h3>
                                             <span class="font-size-13">{{$trains->arrival_time}}</span>
                                         </div>
                                     </div><!-- end col-lg-4 -->
 
-                                    <div class="col-lg-3 col-sm-3">
-                                        <div class="single-feature-titles text-center mb-3">
-                                            <h3 class="title font-size-15 font-weight-medium">Available Seat(s)</h3>
-                                            <span class="font-size-13">{{200-count($searchseat)}}</span>
-                                        </div>
-                                    </div><!-- end col-lg-4 -->
+                                   
                                     <div class="col-lg-12">
                                         <div class="single-feature-titles text-center border-top border-bottom py-3 mb-4">
                                             <h3 class="title font-size-15 font-weight-medium">Total travel time:<span class="font-size-13 d-inline-block ml-1 text-gray">{{$trains->travel_time}}</span></h3>

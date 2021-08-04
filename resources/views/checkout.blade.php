@@ -41,9 +41,11 @@
 ================================= -->
 <section class="booking-area padding-top-100px padding-bottom-70px">
 
-<div id="charge-error" class="alert alert-danger {{ !Session::has('error') ? 'hidden' : ''}}" > {{ Session::get('error')}} </div>
+<div id="charge-error" style="background-color:white;border-color:white" class="alert alert-danger {{ !Session::has('error') ? 'hidden' : ''}}" > {{ Session::get('error')}} </div>
     <div class="container">
+    
        <div class="row">
+       
        @foreach($trains as $train) 
             <div class="col-lg-8">
                 <div class="form-box">
