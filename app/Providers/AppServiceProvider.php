@@ -41,6 +41,8 @@ class AppServiceProvider extends ServiceProvider
         View::share('searchtrip', Train::orderBy('id','desc')->take(3)->get()); 
         View::share('searchseat', Order::orderBy('id','desc')->take(3)->get()); 
 
+        View::share('alltrains', Train::orderBy('id','desc')->get());
+
 
     
     
