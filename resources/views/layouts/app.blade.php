@@ -133,10 +133,10 @@
                                 </ul>
                             </nav>
                         </div><!-- end main-menu-content -->
-                        <div class="nav-btn">
+                     <!--   <div class="nav-btn">
                             <a href="{{route('booking-cart')}}" class="theme-btn">{{Session::has('cart') ? Session::get('cart')->totalQty : ''}} Unpaid Tickets</a>
-                        </div><!-- end nav-btn -->
-                    </div><!-- end menu-wrapper -->
+                        </div>-->
+                    </div>
                 </div><!-- end col-lg-12 -->
             </div><!-- end row -->
         </div><!-- end container-fluid -->
