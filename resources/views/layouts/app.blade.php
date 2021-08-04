@@ -78,6 +78,8 @@
 
                                  <a href="{{ route('ticket') }}" class="theme-btn theme-btn-small" > My Tickets</a>
 
+                                 <a href="{{route('booking-cart')}}" class="theme-btn theme-btn-small">{{Session::has('cart') ? Session::get('cart')->totalQty : ''}} Unpaid Tickets</a>
+
                                  <a href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();" class="theme-btn theme-btn-small" >Logout</a>
@@ -132,7 +134,7 @@
                             </nav>
                         </div><!-- end main-menu-content -->
                         <div class="nav-btn">
-                            <a href="{{route('booking-cart')}}" class="theme-btn">{{Session::has('cart') ? Session::get('cart')->totalQty : ''}} Pending Tickets</a>
+                            <a href="{{route('booking-cart')}}" class="theme-btn">{{Session::has('cart') ? Session::get('cart')->totalQty : ''}} Unpaid Tickets</a>
                         </div><!-- end nav-btn -->
                     </div><!-- end menu-wrapper -->
                 </div><!-- end col-lg-12 -->
