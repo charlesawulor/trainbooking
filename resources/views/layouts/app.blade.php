@@ -162,56 +162,7 @@
 ================================= -->
 <section class="footer-area section-bg padding-top-100px padding-bottom-30px">
     <div class="container">
-        <div class="row">
-           
-            <div class="col-lg-6 responsive-column">
-                <div class="footer-item">
-                    <h4 class="title curve-shape pb-3 margin-bottom-20px" data-text="curvs">Company</h4>
-                    <ul class="list-items list--items">
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        
-                        <li><a href="blog-grid.html">News</a></li>
-                   
-                    </ul>
-                </div><!-- end footer-item -->
-            </div><!-- end col-lg-3 -->
-            <div class="col-lg-6 responsive-column">
-                <div class="footer-item">
-                    <h4 class="title curve-shape pb-3 margin-bottom-20px" data-text="curvs">Travel Routes</h4>
-                    <ul class="list-items list--items">
-                    @if(count($popularroutes) > 0)	
-                @foreach($popularroutes as $route)
-                        <li><a href="singlepage/{{$route->id}}">{{$route->origin}} to {{$route->destination}}</a></li>
-                        @endforeach
-                        @endif
-                        
-                    </ul>
-                </div><!-- end footer-item -->
-            </div><!-- end col-lg-3 -->
-           
-        </div><!-- end row -->
-        <div class="row align-items-center">
-            <div class="col-lg-8">
-                <div class="term-box footer-item">
-                    <ul class="list-items list--items d-flex align-items-center">
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Help Center</a></li>
-                    </ul>
-                </div>
-            </div><!-- end col-lg-8 -->
-            <div class="col-lg-4">
-                <div class="footer-social-box text-right">
-                    <ul class="social-profile">
-                        <li><a href="#"><i class="lab la-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="lab la-twitter"></i></a></li>
-                        <li><a href="#"><i class="lab la-instagram"></i></a></li>
-                        <li><a href="#"><i class="lab la-linkedin-in"></i></a></li>
-                    </ul>
-                </div>
-            </div><!-- end col-lg-4 -->
-        </div><!-- end row -->
+       
     </div><!-- end container -->
     <div class="section-block mt-4"></div>
     <div class="container">

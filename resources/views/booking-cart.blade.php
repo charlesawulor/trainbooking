@@ -44,7 +44,7 @@
                                <span class="price__from"></span>
                                <span class="price__num">${{$train['price']}}</span>
                            </p>
-                           <span class="tour-hour"><i class="la la-clock-o mr-1"></i>Trip Deration : {{$train['item']['travel_time']}}</span>
+                           <span class="tour-hour"><i class="la la-clock-o mr-1"></i>Trip Duration : {{$train['item']['travel_time']}}</span>
                        </div>
                    </div>
 
