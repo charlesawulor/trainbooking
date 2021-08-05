@@ -37,7 +37,8 @@ class TrainController extends AdminController
         $grid->column('train_number', __('Train number'));
         $grid->column('travel_date', __('Travel date'));
         $grid->column('ticket_class', __('Ticket class'));
-        $grid->column('price', __('Price'));
+        $grid->column('ticket_price', __('Price'));
+        $grid->column('number_of_seats', __('Total number of seats'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));
 
@@ -64,7 +65,8 @@ class TrainController extends AdminController
         $show->field('train_number', __('Train number'));
         $show->field('travel_date', __('Travel date'));
         $show->field('ticket_class', __('Ticket class'));
-        $show->field('price', __('Price'));
+        $show->field('ticket_price', __('Price'));
+        $show->field('number_of_seats', __('Total number of seats'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
@@ -89,7 +91,8 @@ class TrainController extends AdminController
         $form->text('train_number', __('Train number'));
         $form->text('travel_date', __('Travel date DD/MM/YYYY'));
         $form->select('ticket_class', __('Ticket class'))->options(Trainclass::all()->pluck('ticket_class','ticket_class'));
-        $form->text('price', __('Price'));
+        $form->text('ticket_price', __('Price'));
+        $form->text('number_of_seats', __('Total Number Of Seats'));
 
         return $form;
     }

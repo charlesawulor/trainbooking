@@ -67,7 +67,8 @@
                                             </h3>
                                         </div>
                                         <p class="deal__meta">Trip Date : {{$trip->travel_date}}</p>
-                                        <p class="deal__meta" style="color:red">{{$trip->number_of_seats-count($searchseat)}} seat(s) left</p>
+                                        <p class="deal__meta" style="color:red">
+                                        {{$trip->number_of_seats-count($searchseat)}} seat(s) left.</p>
                                         <div class="deal-action-box d-flex align-items-center justify-content-between">
                                             <div class="price-box d-flex align-items-center"><span class="price__from mr-1">From</span><span class="price__num">${{$trip->ticket_price}}</span></div>
                                             <a href="singlepage/{{$trip->id}}" class="btn-text">See details<i class="la la-angle-right"></i></a>
