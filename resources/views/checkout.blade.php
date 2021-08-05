@@ -94,37 +94,37 @@
                                                                        $rand=rand(); 
                                                                        echo $rand; 
                                                         ?>NG" 
-                                                        name="ticket" >
+                                                        name="ticket" readonly >
                                             </div>
                                         </div>
                                     </div><!-- end col-lg-12 -->
 
                                     <div class="col-lg-12 responsive-column">
                                         <div class="input-box">
-                                            <label class="label-text">Origin</label>
+                                      <!--  <label class="label-text">Origin</label> -->
                                             <div class="form-group">
-                                                <span class="la la-phone form-icon"></span>
-                                                <input class="form-control" type="text" value="{{$train['item']['origin']}}" name="origin" placeholder="Phone Number">
+                                                <span class=""></span>
+                                                <input class="form-control" type="text" value="{{$train['item']['origin']}}" name="origin" placeholder="Phone Number" hidden>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 responsive-column">
+                                        <div class="input-box">
+                                           <!-- <label class="label-text">Destination</label> -->
+                                            <div class="form-group">
+                                                <span class=""></span>
+                                                <input class="form-control" type="text" value="{{$train['item']['destination']}}" name="destination" placeholder="Phone Number" hidden>
                                             </div>
                                         </div>
                                     </div><!-- end col-lg-6 -->
 
                                     <div class="col-lg-12 responsive-column">
                                         <div class="input-box">
-                                            <label class="label-text">Destination</label>
+                                         <!--   <label class="label-text">Travel Date</label> -->
                                             <div class="form-group">
-                                                <span class="la la-phone form-icon"></span>
-                                                <input class="form-control" type="text" value="{{$train['item']['destination']}}" name="destination" placeholder="Phone Number">
-                                            </div>
-                                        </div>
-                                    </div><!-- end col-lg-6 -->
-
-                                    <div class="col-lg-12 responsive-column">
-                                        <div class="input-box">
-                                            <label class="label-text">Travel Date</label>
-                                            <div class="form-group">
-                                                <span class="la la-phone form-icon"></span>
-                                                <input class="form-control" type="text" value="{{$train['item']['travel_date']}}" name="travel_date" placeholder="Phone Number">
+                                                <span class=""></span>
+                                                <input class="form-control" type="text" value="{{$train['item']['travel_date']}}" name="travel_date" placeholder="Phone Number" hidden >
                                             </div>
                                         </div>
                                     </div><!-- end col-lg-6 -->

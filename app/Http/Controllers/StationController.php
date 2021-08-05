@@ -58,6 +58,8 @@ class StationController extends Controller
         return view('singlepage')->with('trains',$trains);
     }
 
+
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -168,7 +170,7 @@ class StationController extends Controller
       public function postCheckout(Request $request)
       {
           if (!Session::has('cart')){
-             return redirect()->route('booking-cart');
+             return redirect()->route('ticket')->with('success', 'Payment successful');
          }
          $oldCart = Session::get('cart');
          $cart = new Cart($oldCart);
@@ -197,14 +199,18 @@ class StationController extends Controller
                return redirect()->route('checkout')->with('error',$e->getMessage());
             }
             Session::forget('cart');
-            return redirect()->route('ordercomplete')->with('success', 'Payment successful');
+            return redirect()->route('successful')->with('success', 'Payment successful');
           } 
          
          
 
 
 
-
+   public function successful()
+    {
+       
+        return view('successful')->with('success', 'Payment successful');
+    }
 
 
 

@@ -23,6 +23,7 @@ Route::resource('singlepage','StationController');
 Route::post('/checkout', 'StationController@postCheckout')->name('checkout'); 
 Route::get('/ordercomplete', 'StationController@postCheckout')->name('ordercomplete'); 
 Route::get('/ticket', 'UserController@getProfile')->name('ticket'); 
+Route::get('/successful', 'StationController@successful')->name('successful'); 
 
 Route::get('/add-to-cart/{id}',[
     'uses' => 'StationController@getAddToCart',
