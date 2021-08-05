@@ -72,11 +72,11 @@
 
                                             <div class="col-lg-3 pr-0">
                                                 <div class="input-box">
-                                                    <label class="label-text">Departing</label>
+                                                    <label class="label-text">Departing On</label>
                                                     <div class="form-group">
                                                     <span class="la la-calendar form-icon"></span>
 
-                                                    <input class="date-range form-control" type="text" name="daterange-single" readonly>
+                                                    <input class="date-range form-control" type="text" name="daterange-single" readonly >
                                                     </div>
                                                 </div>
                                             </div><!-- end col-lg-3 -->
