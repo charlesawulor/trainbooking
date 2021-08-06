@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+
 use App\Station;
 use App\Train;
 use App\Order;
@@ -10,6 +11,7 @@ use App\Order;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\View;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -30,6 +32,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
+
+      
         Schema::defaultStringLength(191);
 
         View::share('stations', Station::orderBy('id','asc')->get());
@@ -42,6 +47,8 @@ class AppServiceProvider extends ServiceProvider
         View::share('searchseat', Order::orderBy('id','desc')->get()); 
 
         View::share('alltrains', Train::orderBy('id','desc')->get());
+
+        
 
         //View::share('searchseat', Order::where('origin','origin')->where('destination','destination')->get());
 

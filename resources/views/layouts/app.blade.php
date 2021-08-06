@@ -70,7 +70,7 @@
 
                                 @if (Route::has('register'))
 
-                                 <a href="{{ route('register') }}" class="theme-btn theme-btn-small" >Sing Up</a>
+                                 <a href="{{ route('register') }}" class="theme-btn theme-btn-small" >Sign Up</a>
 
                                  @endif
 
