@@ -24,7 +24,7 @@
        @foreach($orders as $order)
                           @foreach($order->cart->items as $item) 
 
-            <div class="col-lg-6" style="margin:auto">
+            <div class="col-lg-4" style="margin:auto">
                 <div class="form-box booking-detail-form">
                     <div class="form-title-wrap">
                         <h3 class="title">Booking Details</h3>
