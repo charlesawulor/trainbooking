@@ -10,6 +10,7 @@ use Auth;
 use Stripe\Charge;
 use Stripe\Stripe;
 use App\Order;
+use App\Mail\Confirmation;
 
 
 class StationController extends Controller
@@ -198,6 +199,7 @@ class StationController extends Controller
              } catch (\Exception $e){
                return redirect()->route('checkout')->with('error',$e->getMessage());
             }
+            \Mail::to($order->email)->send(new Confirmation);
             Session::forget('cart');
             return redirect()->route('successful')->with('success', 'Payment successful');
           } 
