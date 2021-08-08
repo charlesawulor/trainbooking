@@ -69,7 +69,7 @@
                                         <p class="deal__meta">Trip Date : {{$trip->travel_date}}</p>
                                         <p class="deal__meta" style="color:red">
                                         {{$trip->number_of_seats-count($searchseat)}} seat(s) left.</p>
-                                     
+
                                          <p><span class="badge badge-warning text-white font-weight-medium font-size-16" style="background-color:#287dfa"> Seat Type : {{$trip->ticket_class}}</span>
                                         </p>
                                         <div class="deal-action-box d-flex align-items-center justify-content-between">

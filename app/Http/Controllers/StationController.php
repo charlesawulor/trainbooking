@@ -103,6 +103,7 @@ class StationController extends Controller
     $searchtrip = Train::where('origin',  'LIKE', '%' . $search_text. '%')->Where('destination',  'LIKE', '%' . $search_text1. '%')->Where('travel_date',  'LIKE', '%' . $search_text2. '%')->get();
     $searchseat = Order::where('origin',  'LIKE', '%' . $search_text. '%')->Where('destination',  'LIKE', '%' . $search_text1. '%')->Where('travel_date',  'LIKE', '%' . $search_text2. '%')->get();
     return view('result',compact ('searchtrip','searchseat'));
+  
     }
 
 

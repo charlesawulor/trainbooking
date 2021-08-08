@@ -93,6 +93,7 @@
                                         <div class="single-feature-titles text-center mb-3">
                                             <i class="la la-clock-o text-color font-size-22"></i>
                                             <span class="font-size-13 mt-n2">{{$trains->travel_time}}</span>
+                                            
                                         </div>
                                     </div><!-- end col-lg-4 -->
                                     <div class="col-lg-4 col-sm-4">
