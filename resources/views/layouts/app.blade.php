@@ -108,7 +108,7 @@
                     <div class="menu-wrapper">
                         <a href="#" class="down-button"><i class="la la-angle-down"></i></a>
                         <div class="logo">
-                        <a href="index.html"><img src="{{asset('assets/images/ticketing.png')}}" alt="logo"></a>
+                        <a href="{{route('home')}}"><img src="{{asset('assets/images/ticketing.png')}}" alt="logo"></a>
                            
                             <div class="menu-toggler">
                                 <i class="la la-bars"></i>
@@ -119,7 +119,7 @@
                             <nav>
                                 <ul>
                                     <li>
-                                        <a href="#">Home </a>
+                                        <a href="{{route('home')}}">Home </a>
                                        
                                     </li>
                                     <li>
