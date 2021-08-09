@@ -15,4 +15,6 @@ Route::group([
 
     $router->resource('trains', TrainController::class);
 
+    $router->resource('orders', OrderController::class);
+
 });

@@ -95,7 +95,7 @@
                            <a href="tour-details.html" class="d-block">
                            <img src="{{asset('assets/images/nigeriatrain.jpg')}}" style="height:200px" alt="Destination-img">
                              </a>
-                             <h3 style="margin:auto">Your searched route or travel date or both didn't return any result.</h3>            
+                             <h3 style="margin:auto;text-align:center;font-size:25px">Your searched route or travel date or both didn't return any result.</h3>            
                             </div>
                         </div>
                    </div> 
@@ -103,7 +103,7 @@
 
     <div class="col-lg-12">
                 <div class="section-heading text-center">
-                    <h2 class="sec__title line-height-55">These Are Some of Our Available <br> Scheduled Train Destinations. Redefine Your Search.</h2>
+                    <h2 class="sec__title line-height-55" style="font-size:25px">Check Below For Our Available Scheduled Train Destinations And Redefine Your Search.</h2>
                 </div><!-- end section-heading -->
             </div><!-- end col-lg-12 -->
 
