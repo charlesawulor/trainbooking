@@ -62,7 +62,7 @@
                                             <label class="label-text">Full Name</label>
                                             <div class="form-group">
                                                 <span class="la la-user form-icon"></span>
-                                                <input class="form-control" type="text" name="name" placeholder="First name">
+                                                <input class="form-control" type="text" name="name" placeholder="Full name">
                                             </div>
                                         </div>
                                     </div><!-- end col-lg-6 -->
