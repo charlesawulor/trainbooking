@@ -274,15 +274,15 @@
                 <div class="testimonial-carousel carousel-action">
                     <div class="testimonial-card">
                         <div class="testi-desc-box">
-                            <p class="testi__desc">Booking train ticket Booking train ticket Booking train ticket Booking train ticket Booking train ticket Booking train ticket Booking train ticket.</p>
+                            <p class="testi__desc">Easy to use </p>
                         </div>
                         <div class="author-content d-flex align-items-center">
                             <div class="author-img">
                                 <img src="{{asset('assets/images/team8.jpg')}}" alt="testimonial image">
                             </div>
                             <div class="author-bio">
-                                <h4 class="author__title">Leroy Bell</h4>
-                                <span class="author__meta">United States</span>
+                                <h4 class="author__title">Leroy </h4>
+                               
                                 <span class="ratings d-flex align-items-center">
                                     <i class="la la-star"></i>
                                     <i class="la la-star"></i>
@@ -295,7 +295,7 @@
                     </div><!-- end testimonial-card -->
                     <div class="testimonial-card">
                         <div class="testi-desc-box">
-                            <p class="testi__desc">Booking train ticket Booking train ticket Booking train ticket Booking train ticket Booking train ticket Booking train ticket Booking train ticket.</p>
+                            <p class="testi__desc">Amazing experience</p>
                         </div>
                         <div class="author-content d-flex align-items-center">
                             <div class="author-img">
@@ -303,7 +303,7 @@
                             </div>
                             <div class="author-bio">
                                 <h4 class="author__title">Richard Pam</h4>
-                                <span class="author__meta">Canada</span>
+                                <span class="author__meta"></span>
                                 <span class="ratings d-flex align-items-center">
                                     <i class="la la-star"></i>
                                     <i class="la la-star"></i>
