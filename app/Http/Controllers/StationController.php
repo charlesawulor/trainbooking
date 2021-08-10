@@ -103,7 +103,7 @@ class StationController extends Controller
     $searchtrip = Train::where('origin',  'LIKE', '%' . $search_text. '%')->Where('destination',  'LIKE', '%' . $search_text1. '%')->Where('travel_date',  'LIKE', '%' . $search_text2. '%')->get();
     //This below search which is commented out counter code is for when each travel route has its own train or coach
    // $searchseat = Order::where('origin',  'LIKE', '%' . $search_text. '%')->Where('destination',  'LIKE', '%' . $search_text1. '%')->Where('travel_date',  'LIKE', '%' . $search_text2. '%')->get();
-   
+
     //This seat search counter below  is when all travel route are combined on one train for the choosen date
      $searchseat = Order::where('travel_date',  'LIKE', '%' . $search_text2. '%')->get();
     return view('result',compact ('searchtrip','searchseat'));
@@ -122,17 +122,7 @@ class StationController extends Controller
        return redirect()->route('booking-cart');        
     }
 
-  //   public function getReduceByOne($id) { 
-  //       $oldCart = Session::has('cart') ? Session::get('cart') : null;
-  //      $cart = new Cart($oldCart);
-  //      $cart->reduceByOne($id);
-  //      if (count($cart->items) > 0){
-  //          Session::put('cart', $cart);
-  //           }else {
-  //            Session::forget('cart');
-  //           }
-  //      return back(); 
-  //  } 
+
 
 
     public function getRemoveItem($id) {
