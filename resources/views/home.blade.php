@@ -295,7 +295,8 @@
                     </div><!-- end testimonial-card -->
                     <div class="testimonial-card">
                         <div class="testi-desc-box">
-                            <p class="testi__desc">Amazing experience booking on this app</p>
+                            <p class="testi__desc">Amazing experience booking on this platform
+                            </p>
                         </div>
                         <div class="author-content d-flex align-items-center">
                             <div class="author-img">
