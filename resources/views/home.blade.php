@@ -303,7 +303,7 @@
                                 <img src="{{asset('assets/images/team9.jpg')}}" alt="testimonial image">
                             </div>
                             <div class="author-bio">
-                                <h4 class="author__title">Richard Pam</h4>
+                                <h4 class="author__title">Richard</h4>
                                 <span class="author__meta"></span>
                                 <span class="ratings d-flex align-items-center">
                                     <i class="la la-star"></i>
