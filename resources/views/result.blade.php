@@ -33,10 +33,12 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-heading text-center">
-                    <h2 class="sec__title line-height-55">Available Train(s) For  <br> Searched Travel Route And Selected Date.</h2>
+                    <h2 class="sec__title line-height-55">Trip Search Result</h2>
                 </div><!-- end section-heading -->
             </div><!-- end col-lg-12 -->
         </div><!-- end row -->
+
+
         <div class="row padding-top-50px">
             <div class="col-lg-12">
                <div class="flight-filter-tab text-center">

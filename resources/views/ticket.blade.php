@@ -41,7 +41,7 @@
                             <div class="card-body p-0">
                                 <div class="d-flex justify-content-between">
                                     <div>
-                                        <h3 class="card-title">{{$item ['item'] ['origin']  }} <i class="la la-exchange mx-2"></i> {{$item ['item'] ['destination']  }}</h3>
+                                        <h3 class="card-title">{{$item ['item'] ['origin']  }} <i class="la la-arrow-right mx-2"></i> {{$item ['item'] ['destination']  }}</h3>
                                         <p class="card-meta">Date:{{$item ['item'] ['travel_date']  }}</p>
                                     </div>
                                     
