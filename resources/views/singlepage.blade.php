@@ -72,7 +72,7 @@
                     <div class="single-content-wrap padding-top-60px">
                         <div id="description" class="page-scroll">
                             <div class="single-content-item pb-4">
-                                <h3 class="title font-size-26">{{$trains->origin}} to {{$trains->destination}}</h3>
+                                <h3 class="title font-size-26">{{$trains->origin}} <i class="la la-arrow-right mx-2"></i> {{$trains->destination}}</h3>
                                 <div class="d-flex align-items-center pt-2">
                                     <p class="mr-2">One way Trip</p>
                                     <p>

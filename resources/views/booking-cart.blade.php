@@ -31,7 +31,7 @@
 
                    @foreach($trains as $train)
                    <div class="card-body">
-                       <h3 class="card-title"><a href="tour-details.html">{{$train['item']['origin']}}  <i class="la la-exchange mx-2"></i> {{$train['item']['destination']}}</a></h3>
+                       <h3 class="card-title"><a href="tour-details.html">{{$train['item']['origin']}}  <i class="la la-arrow-right mx-2"></i> {{$train['item']['destination']}}</a></h3>
                        <p class="card-meta">Depart: {{$train['item']['depature_time']}}<i class="la la-exchange mx-2"></i>Arrive: {{$train['item']['arrival_time']}}</p>
                        <p class="card-meta">Travel Date: {{$train['item']['travel_date']}}</p>
                        <div class="card-rating">

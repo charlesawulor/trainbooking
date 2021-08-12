@@ -85,7 +85,7 @@
                                            
                                          
                                             <div class="col-lg-3">
-                                                <button class="theme-btn w-100 text-center margin-top-20px">Search Now</button>
+                                                <button class="theme-btn w-100 text-center margin-top-20px">Search My Train</button>
                                             </div>
                                         </form>
                                     </div>
@@ -200,7 +200,7 @@
                                             <img src="{{asset('assets/images/airline-img.png')}}" alt="air-line-img">
                                             <h3 class="deal__title">
                                                 <a href="singlepage/{{$trip->id}}" class="d-flex align-items-center">
-                                                {{$trip->origin}}<i class="la la-exchange mx-2"></i>{{$trip->destination}} 
+                                                {{$trip->origin}}<i class="la la-arrow-right mx-2"></i>{{$trip->destination}} 
                                                 </a>
                                             </h3>
                                         </div>
