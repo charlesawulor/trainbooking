@@ -233,29 +233,6 @@
     END ROUND-TRIP AREA
 ================================= -->
 
-<!-- ================================
-    START HOTEL AREA
-================================= -->
-
-<!-- ================================
-    END HOTEL AREA
-================================= -->
-
-<!-- ================================
-    START DESTINATION AREA
-================================= -->
-
-<!-- ================================
-    END DESTINATION AREA
-================================= -->
-
-<!-- ================================
-    START CAR AREA
-================================= -->
-
-<!-- ================================
-    END CAR AREA
-================================= -->
 
 <!-- ================================
        START TESTIMONIAL AREA
@@ -274,22 +251,13 @@
                 <div class="testimonial-carousel carousel-action">
                     <div class="testimonial-card">
                         <div class="testi-desc-box">
-                            <p class="testi__desc">Easy to use </p>
+                            <p class="testi__desc">I had an amazing experience booking my travel ticket on this platform</p>
                         </div>
                         <div class="author-content d-flex align-items-center">
-                            <div class="author-img">
-                                <img src="{{asset('assets/images/team8.jpg')}}" alt="testimonial image">
-                            </div>
+                            
                             <div class="author-bio">
                                 <h4 class="author__title">Leroy </h4>
-                               
-                                <span class="ratings d-flex align-items-center">
-                                    <i class="la la-star"></i>
-                                    <i class="la la-star"></i>
-                                    <i class="la la-star"></i>
-                                    <i class="la la-star"></i>
-                                    <i class="la la-star"></i>
-                                </span>
+                              
                             </div>
                         </div>
                     </div><!-- end testimonial-card -->
@@ -299,64 +267,15 @@
                             </p>
                         </div>
                         <div class="author-content d-flex align-items-center">
-                            <div class="author-img">
-                                <img src="{{asset('assets/images/team9.jpg')}}" alt="testimonial image">
-                            </div>
+                           
                             <div class="author-bio">
                                 <h4 class="author__title">Richard</h4>
                                 <span class="author__meta"></span>
-                                <span class="ratings d-flex align-items-center">
-                                    <i class="la la-star"></i>
-                                    <i class="la la-star"></i>
-                                    <i class="la la-star"></i>
-                                    <i class="la la-star"></i>
-                                    <i class="la la-star"></i>
-                                </span>
+                               
                             </div>
                         </div>
                     </div><!-- end testimonial-card -->
-                    <div class="testimonial-card">
-                        <div class="testi-desc-box">
-                            <p class="testi__desc">Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit anim laborum sint occaecat cupidatat non proident. Occaecat cupidatat non proident des.</p>
-                        </div>
-                        <div class="author-content d-flex align-items-center">
-                            <div class="author-img">
-                                <img src="{{asset('assets/images/team10.jpg')}}" alt="testimonial image">
-                            </div>
-                            <div class="author-bio">
-                                <h4 class="author__title">Luke Jacobs</h4>
-                                <span class="author__meta">Australia</span>
-                                <span class="ratings d-flex align-items-center">
-                                    <i class="la la-star"></i>
-                                    <i class="la la-star"></i>
-                                    <i class="la la-star"></i>
-                                    <i class="la la-star"></i>
-                                    <i class="la la-star"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div><!-- end testimonial-card -->
-                    <div class="testimonial-card">
-                        <div class="testi-desc-box">
-                            <p class="testi__desc">Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit anim laborum sint occaecat cupidatat non proident. Occaecat cupidatat non proident des.</p>
-                        </div>
-                        <div class="author-content d-flex align-items-center">
-                            <div class="author-img">
-                                <img src="{{asset('assets/images/team8.jpg')}}" alt="testimonial image">
-                            </div>
-                            <div class="author-bio">
-                                <h4 class="author__title">Chulbul Panday</h4>
-                                <span class="author__meta">Italy</span>
-                                <span class="ratings d-flex align-items-center">
-                                    <i class="la la-star"></i>
-                                    <i class="la la-star"></i>
-                                    <i class="la la-star"></i>
-                                    <i class="la la-star"></i>
-                                    <i class="la la-star"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div><!-- end testimonial-card -->
+
                 </div><!-- end testimonial-carousel -->
             </div><!-- end col-lg-8 -->
         </div><!-- end row -->
@@ -371,9 +290,9 @@
 ================================= -->
 <section class="cta-area padding-top-100px padding-bottom-180px text-center">
     <div class="video-bg">
-        <video autoplay loop>
+    <video autoplay loop>
             <source src="{{asset('assets/video/video-bg.mp4')}}" type="video/mp4">
-            Your browser does not support the video tag.
+       
         </video>
     </div>
     <div class="container">
@@ -382,9 +301,7 @@
                 <div class="section-heading">
                     <h2 class="sec__title text-white line-height-55">Let us show you the world <br> Discover our most popular destinations</h2>
                 </div><!-- end section-heading -->
-                <div class="btn-box padding-top-35px">
-                    <a href="become-local-expert.html" class="theme-btn border-0">Join with us</a>
-                </div>
+             
             </div><!-- end col-lg-12 -->
         </div><!-- end row -->
     </div><!-- end container -->
