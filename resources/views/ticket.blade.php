@@ -54,7 +54,7 @@
                                 <div class="section-block"></div>
                                 <ul class="list-items list-items-2 list-items-flush py-2">
                                     <li class="font-size-15"><span class="w-auto d-block mb-n1"><i class="la la-train mr-1 font-size-17"></i>Take off</span>{{$item ['item'] ['depature_time']  }}</li>
-                                    <li class="font-size-15"><i class="la la-clock-o mr-1 text-black font-size-17"></i>{{$item ['item'] ['travel_time']  }}</li>
+                                    <li class="font-size-15"><span class="w-auto d-block mb-n1"><i class="la la-clock-o mr-1 text-black font-size-17"></i>Travel time</span>{{$item ['item'] ['travel_time']  }}</li>
                                     <li class="font-size-15"><span class="w-auto d-block mb-n1"><i class="la la-train mr-1 font-size-17"></i>Arrival</span>{{$item ['item'] ['arrival_time']  }}</li>
 
                                     <li class="font-size-15"><span class="w-auto d-block mb-n1"><i class="la la-money-bill mr-1 font-size-17"></i>Ticket Cost</span>${{$item ['item'] ['ticket_price']  }}</li>
