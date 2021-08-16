@@ -27,7 +27,7 @@
             <div class="col-lg-4" style="margin:auto">
                 <div class="form-box booking-detail-form">
                     <div class="form-title-wrap">
-                        <h3 class="title">Ticket Details</h3>
+                        <h3 class="title">Travel Ticket Details</h3>
                     </div><!-- end form-title-wrap -->
 
                     <div class="form-content">
