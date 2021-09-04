@@ -99,15 +99,11 @@ class StationController extends Controller
     {
     $search_text = $_GET['query'];
     $search_text1 = $_GET['query1'];
-    $search_text2 = $_GET['daterange-single'];
+    $search_text2 = $_GET['datee'];
     $searchtrip = Train::where('origin',  'LIKE', '%' . $search_text. '%')->Where('destination',  'LIKE', '%' . $search_text1. '%')->Where('travel_date',  'LIKE', '%' . $search_text2. '%')->get();
-    //This below search which is commented out counter code is for when each travel route has its own train or coach
-   // $searchseat = Order::where('origin',  'LIKE', '%' . $search_text. '%')->Where('destination',  'LIKE', '%' . $search_text1. '%')->Where('travel_date',  'LIKE', '%' . $search_text2. '%')->get();
-
     //This seat search counter below  is when all travel route are combined on one train for the choosen date
      $searchseat = Order::where('travel_date',  'LIKE', '%' . $search_text2. '%')->get();
     return view('result',compact ('searchtrip','searchseat'));
-  
     }
 
 

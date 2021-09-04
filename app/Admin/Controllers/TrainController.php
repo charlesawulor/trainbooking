@@ -89,7 +89,7 @@ class TrainController extends AdminController
         $form->text('travel_time', __('Travel time'));
         $form->text('rail_company', __('Rail company'));
         $form->text('train_number', __('Train number'));
-        $form->text('travel_date', __('Travel date DD/MM/YYYY'));
+        $form->date('travel_date', __('Travel date YYYY/MM/DD'));
         $form->select('ticket_class', __('Ticket class'))->options(Trainclass::all()->pluck('ticket_class','ticket_class'));
         $form->text('ticket_price', __('Price'));
         $form->text('number_of_seats', __('Total Number Of Seats'));
