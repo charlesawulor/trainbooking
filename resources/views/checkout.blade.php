@@ -186,7 +186,7 @@
                                             {{csrf_field()}}  
                                             <div class="col-lg-12">
                                                 <div class="btn-box">
-                                                    <button class="theme-btn" type="submit">Confirm Booking - Pay ${{$totalPrice}}</button>
+                                                    <button class="theme-btn" type="submit">Confirm Booking ${{$totalPrice}}</button>
                                                 </div>
                                             </div><!-- end col-lg-12 -->
 

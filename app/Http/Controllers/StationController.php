@@ -108,6 +108,7 @@ class StationController extends Controller
 
 
 
+
     public function getAddToCart(Request $request, $id) {
         $train = Train::find($id);
         $oldCart = Session::has('cart') ? Session::get('cart') : null;

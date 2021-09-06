@@ -74,11 +74,8 @@
                                                 <div class="input-box">
                                                     <label class="label-text">Departing On</label>
                                                     <div class="form-group">
-                                                    <span class="la la-calendar form-icon"></span>
-
-                                                    <input class="date-range form-control" type="text" name="daterange-single" readonly >
-
-                                                    <input type="date" name="datee" value="2017-06-01">
+                                                  
+                                                     <input class="date-range form-control" type="date" name="datee" value="2021-09-01">
                                                     </div>
                                                 </div>
                                             </div><!-- end col-lg-3 -->
@@ -470,7 +467,7 @@
 
 <script type="text/javascript" >
 var dateControl = document.querySelector('input[type="date"]');
-dateControl.value = '2017-06-01';
+dateControl.value = '2021-09-01';
 console.log(dateControl.value); // prints "2017-06-01"
 console.log(dateControl.valueAsNumber); // prints 1496275200000, a JavaScript timestamp (ms)
 </script>
