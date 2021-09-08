@@ -39,6 +39,6 @@ class everyDay extends Command
      */
     public function handle()
     {
-        order::where('travel_date','<', Carbon::now()->subDays(5))->delete();  //This delete trip ticket 5days after the trip
+        order::where('travel_date','<', Carbon::now()->subDays(1))->delete();  //This delete trip ticket 5days after the trip
     }
 }

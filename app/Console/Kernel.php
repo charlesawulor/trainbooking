@@ -26,6 +26,7 @@ class Kernel extends ConsoleKernel
     {
 
         $schedule->command('daily:delete')->daily();
+        $schedule->command('daily:reminder')->daily();
 
         // $schedule->command('inspire')
         //          ->hourly();
