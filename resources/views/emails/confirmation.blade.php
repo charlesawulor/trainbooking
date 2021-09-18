@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <h3>Your train ticket booking was successful. Check your ticket page to get your booking information. Please ensure to come to the terminal with your ticket. </h3>
+    <h3>Your train ticket booking was successful. Check your ticket page to get your booking information. Please ensure to come to the train terminal with your ticket. </h3>
     
     <p><h6 style="color:#287dfa">
     Regards,<br>

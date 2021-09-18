@@ -25,6 +25,10 @@ Route::get('/ordercomplete', 'StationController@postCheckout')->name('ordercompl
 Route::get('/ticket', 'UserController@getProfile')->name('ticket'); 
 Route::get('/successful', 'StationController@successful')->name('successful'); 
 
+
+
+
+
 Route::get('/add-to-cart/{id}',[
     'uses' => 'StationController@getAddToCart',
     'as' => 'singlepage.addToCart'
