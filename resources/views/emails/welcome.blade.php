@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <h3>You have successfully signed up for the online train booking platform.</h3>
+    <h3>You have successfully signed up on the online train ticket booking platform.</h3>
     
     <p><h6>
     Regards,<br>
